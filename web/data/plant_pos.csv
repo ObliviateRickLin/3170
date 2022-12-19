@@ -1,0 +1,15 @@
+city,lat,lon,country,iso2,admin_name,capital,population,population_proper
+shanghai,31.1667,121.4667,China,CN,Shanghai,admin,22120000.0,22120000.0
+guangzhou,23.1288,113.259,China,CN,Guangdong,admin,20902000.0,14498400.0
+beijing,39.905,116.3914,China,CN,Beijing,primary,19433000.0,19433000.0
+shenzhen,22.535,114.054,China,CN,Guangdong,minor,15929000.0,12528300.0
+chengdu,30.66,104.0633,China,CN,Sichuan,admin,11309000.0,11309000.0
+jinan,36.6667,116.9833,China,CN,Shandong,admin,7967400.0,7967400.0
+chongqing,29.5628,106.5528,China,CN,Chongqing,admin,7739000.0,7739000.0
+nanjing,32.05,118.7667,China,CN,Jiangsu,admin,7496000.0,7260000.0
+xi'an,34.2667,108.9,China,CN,Shaanxi,admin,7135000.0,7135000.0
+shenyang,41.8039,123.4258,China,CN,Liaoning,admin,7105000.0,7105000.0
+zhengzhou,34.7492,113.6605,China,CN,Henan,admin,7005000.0,7005000.0
+kunming,25.0433,102.7061,China,CN,Yunnan,admin,6250000.0,6250000.0
+fuzhou,26.0769,119.2917,China,CN,Fujian,admin,5245000.0,5245000.0
+harbin,45.75,126.6333,China,CN,Heilongjiang,admin,4458000.0,4458000.0

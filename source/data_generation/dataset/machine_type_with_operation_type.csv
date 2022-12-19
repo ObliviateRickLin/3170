@@ -1,0 +1,140 @@
+operation_name,machine_name,machine_version
+F18,Resin Bond Blade,PG Series
+B8,Resin Bond Blade,PG Series
+D18,Resin Bond Blade,PG Series
+E3,Resin Bond Blade,PG Series
+F14,Resin Bond Blade,PG Series
+G7,Resin Bond Blade,GC series
+F12,Nickel Bond Blades,DS type
+F7,Nickel Bond Blades,DS type
+E3,Nickel Bond Blades,DS type
+A4,Nickel Bond Blades,DS type
+D9,Nickel Bond Blades,DS type
+F13,Nickel Bond Blades,MN HALF SLIT type
+D6,Nickel Bond Blades,MN HALF SLIT type
+E1,Nickel Bond Blades,MN type
+D12,Nickel Bond Blades,MN type
+A4,Nickel Bond Blades,MN type
+B14,Nickel Bond Blades,MN type
+E5,Metal Bond Blades,HM Series
+A4,Metal Bond Blades,HM Series
+C7,Metal Bond Blades,YM/AM Series
+F9,Metal Bond Blades,YM/AM Series
+B1,Metal Bond Blades,YM/AM Series
+D9,Metal Bond Blades,YM/AM Series
+D20,Metal Bond Blades,YM/AM Series
+C3,Metal Bond Blades,GM Series
+F9,Hub Type Blades,FTB/CCB series
+B10,Hub Type Blades,FTB/CCB series
+G2,Hub Type Blades,FTB/CCB series
+F12,Hub Type Blades,FTB/CCB series
+D4,Ultra Hard Metal Saws,
+D20,Ultra Hard Metal Saws,
+G4,Dressing Plate,
+F4,Dressing Plate,
+F14,Dicing Machine,AD3000T-PLUS
+F16,Dicing Machine,AD3000T-PLUS
+D19,Dicing Machine,AD3000T-PLUS
+D5,Dicing Machine,AD3000T-PLUS
+B12,Dicing Machine,AD3000T-PLUS
+D5,Dicing Machine,AD3000T-HC PLUS
+B16,Dicing Machine,AD3000T-HC PLUS
+F11,Dicing Machine,AD3000T-HC PLUS
+E3,Dicing Machine,AD2000T/S
+B8,Dicing Machine,AD20T/S
+C5,Dicing Machine,SS10
+B5,Dicing Machine,SS10
+G4,Dicing Machine,SS20
+E4,Dicing Machine,SS20
+F14,Dicing Machine,SS20
+F6,Dicing Machine,SS20
+D21,Dicing Machine,SS20
+F18,Dicing Machine,SS30
+F16,Dicing Machine,SS30
+B6,Dicing Machine,SS30
+F15,Singulation Machine,PS300
+F13,Singulation Machine,PS300
+D19,Singulation Machine,PS300
+C6,Singulation Machine,PS300
+G5,Laser Dicing Machine,ML301EXWH
+G8,Laser Dicing Machine,ML301EXWH
+D15,Automatic Cleaning System,A-CS-300
+G1,Automatic Cleaning System,A-CS-300
+D3,Automatic Cleaning System,A-CS-300
+C8,Ablation laser dicing machine for plasma dicing,AL300P
+C2,Ablation laser dicing machine for plasma dicing,AL300P
+D18,Ablation laser dicing machine for plasma dicing,AL300P
+B6,Ablation laser dicing machine for plasma dicing,AL300P
+E5,Probing Machine,AP3000/AP3000e
+D3,Probing Machine,AP3000/AP3000e
+E8,Probing Machine,AP3000/AP3000e
+D1,Probing Machine,AP3000/AP3000e
+B14,Probing Machine,FP3000
+D21,Probing Machine,FP3000
+G5,Probing Machine,FP3000
+E4,Probing Machine,FP3000
+B15,Probing Machine,UF3000LX
+E2,Probing Machine,UF3000LX
+F17,Probing Machine,UF3000LX
+D16,Probing Machine,UF2000
+B5,Probing Machine,UF200R
+D15,Probing Machine,UF200R
+F9,Probing Machine,UF200R
+E1,Probing Machine,UF200R
+F5,Probing Machine,UF190R
+G7,Probing Machine,UF190R
+C8,Probing Machine,UF190R
+D1,Probing Machine,UF190R
+B14,Probing Machine,UF190R
+D3,Probing Machine,FP2000
+F6,Probing Machine,FP2000
+B9,Probing Machine,FP2000
+B14,Probing Machine,FP2000
+D14,Probing Machine,FP2000
+F16,Probing Machine,AltaProv
+D4,Probing Machine,AltaProv
+D8,Probing Machine,AltaProv
+E5,Probing Machine,AltaProv
+B8,Probing Machines Network,VEGANET
+F2,Probing Machines Network,VEGANET
+E7,Probing Machines Network,LIGHTVEGA
+D11,Probing Machines Network,LIGHTVEGA
+D7,Probing Machines Network,LIGHTVEGA
+D10,Probing Machines Network,LIGHTVEGA
+G5,Probing Machines Network,GEM Network System
+F4,Probing Machines Network,GEM Network System
+F7,Probing Machines Network,GEM Network System
+C7,Probing Machines Network,GEM Network System
+B1,Probing Machines Network,GEM Network System
+D10,Probing Machines Network,VEGA PLANET
+B4,Probing Machines Network,VEGA PLANET
+E4,Polish Grinder,PG3000RMX
+G5,High Rigid Grinder,HRG3000RMX
+B4,High Rigid Grinder,HRG3000RMX
+D2,High Rigid Grinder,HRG3000RMX
+D4,High Rigid Grinder,HRG3000RMX
+C7,High Rigid Grinder,HRG300/HRG300A
+F13,High Rigid Grinder,HRG300/HRG300A
+G3,Fully Automatic High Rigid Twin Axis Grinder,HRG200X
+F1,Fully Automatic High Rigid Twin Axis Grinder,HRG200X
+F8,ChaMP,For 300 mm Wafers
+C3,ChaMP,For 300 mm Wafers
+C2,ChaMP,For 300 mm Wafers
+D7,ChaMP,For 300 mm Wafers
+G3,ChaMP,Compact CMP System
+D20,ChaMP,Compact CMP System
+C8,ChaMP,Compact CMP System
+B2,ChaMP,Compact CMP System
+F13,ChaMP,Compact CMP System
+G5,Wafer Edge Grinding machine,W-GM-4200
+B13,Wafer Edge Grinding machine,W-GM-5200
+F1,Wafer Edge Grinding machine,W-GM-5200
+F14,Wafer Edge Grinding machine,W-GM-5200
+B15,Wafer Edge Grinding machine,W-GM-5200
+G7,Wafer Edge Grinding machine,W-GM-5200
+E2,Wafer Edge Grinding machine,W-GM-6200
+F11,Wafer Edge Grinding machine,W-GM-6200
+E8,Wafer Edge Grinding machine,W-GM-6200
+E6,Wafer Edge Grinding machine,W-GM-6200
+B4,Wafer Edge Grinding machine,W-GM-6200
+D21,Sliced Wafer Demounting and Cleaning Machine,C-RW Series

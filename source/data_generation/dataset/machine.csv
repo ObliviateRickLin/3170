@@ -1,0 +1,637 @@
+﻿machine_name,machine_version,price,plant_id,machine_id,plant_label
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,18,1,Shenzhen-1
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,14,2,Shanghai
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,12,3,Chengdu-1
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,15,4,Kunming
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,13,5,Shenzhen-3
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,6,6,Jinan
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,2,7,Beijing-1
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,11,8,Beijing-2
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,17,9,Zhengzhou
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,17,10,Zhengzhou
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,10,11,Guangzhou
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,20,12,Chengdu-2
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,4,13,Nanjing
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,18,14,Shenzhen-1
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,10,15,Guangzhou
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,17,16,Zhengzhou
+Ablation laser dicing machine for plasma dicing,AL300P,16.8,19,17,Shenzhen-2
+Automatic Cleaning System,A-CS-300,16.8,18,18,Shenzhen-1
+Automatic Cleaning System,A-CS-300,16.8,5,19,Fuzhou
+Automatic Cleaning System,A-CS-300,16.8,17,20,Zhengzhou
+Automatic Cleaning System,A-CS-300,16.8,12,21,Chengdu-1
+Automatic Cleaning System,A-CS-300,16.8,6,22,Jinan
+Automatic Cleaning System,A-CS-300,16.8,12,23,Chengdu-1
+Automatic Cleaning System,A-CS-300,16.8,2,24,Beijing-1
+Automatic Cleaning System,A-CS-300,16.8,17,25,Zhengzhou
+Automatic Cleaning System,A-CS-300,16.8,3,26,Harbin
+Automatic Cleaning System,A-CS-300,16.8,3,27,Harbin
+Automatic Cleaning System,A-CS-300,16.8,16,28,Xi'an-2
+Automatic Cleaning System,A-CS-300,16.8,12,29,Chengdu-1
+Automatic Cleaning System,A-CS-300,16.8,7,30,Chongqing
+Automatic Cleaning System,A-CS-300,16.8,1,31,Xi'an-1
+Automatic Cleaning System,A-CS-300,16.8,15,32,Kunming
+Automatic Cleaning System,A-CS-300,16.8,11,33,Beijing-2
+ChaMP,Compact CMP System,10.08,19,34,Shenzhen-2
+ChaMP,Compact CMP System,10.08,7,35,Chongqing
+ChaMP,Compact CMP System,10.08,15,36,Kunming
+ChaMP,For 300 mm Wafers,10.08,12,37,Chengdu-1
+ChaMP,For 300 mm Wafers,10.08,11,38,Beijing-2
+ChaMP,For 300 mm Wafers,10.08,10,39,Guangzhou
+ChaMP,Compact CMP System,10.08,5,40,Fuzhou
+ChaMP,Compact CMP System,10.08,2,41,Beijing-1
+ChaMP,Compact CMP System,10.08,7,42,Chongqing
+ChaMP,For 300 mm Wafers,10.08,20,43,Chengdu-2
+ChaMP,For 300 mm Wafers,10.08,7,44,Chongqing
+ChaMP,For 300 mm Wafers,10.08,3,45,Harbin
+ChaMP,Compact CMP System,10.08,6,46,Jinan
+ChaMP,Compact CMP System,10.08,16,47,Xi'an-2
+ChaMP,Compact CMP System,10.08,13,48,Shenzhen-3
+ChaMP,For 300 mm Wafers,10.08,3,49,Harbin
+ChaMP,For 300 mm Wafers,10.08,16,50,Xi'an-2
+ChaMP,For 300 mm Wafers,10.08,13,51,Shenzhen-3
+ChaMP,Compact CMP System,10.08,18,52,Shenzhen-1
+ChaMP,Compact CMP System,10.08,11,53,Beijing-2
+ChaMP,Compact CMP System,10.08,10,54,Guangzhou
+ChaMP,For 300 mm Wafers,10.08,20,55,Chengdu-2
+ChaMP,For 300 mm Wafers,10.08,11,56,Beijing-2
+ChaMP,For 300 mm Wafers,10.08,12,57,Chengdu-1
+Dicing Machine,AD2000T/S,5.04,8,58,Shenyang
+Dicing Machine,AD2000T/S,5.04,12,59,Chengdu-1
+Dicing Machine,AD2000T/S,5.04,18,60,Shenzhen-1
+Dicing Machine,AD2000T/S,5.04,20,61,Chengdu-2
+Dicing Machine,AD2000T/S,5.04,2,62,Beijing-1
+Dicing Machine,AD2000T/S,5.04,11,63,Beijing-2
+Dicing Machine,AD20T/S,5.04,8,64,Shenyang
+Dicing Machine,AD20T/S,5.04,15,65,Kunming
+Dicing Machine,AD20T/S,5.04,7,66,Chongqing
+Dicing Machine,AD20T/S,5.04,20,67,Chengdu-2
+Dicing Machine,AD20T/S,5.04,9,68,Xi'an-3
+Dicing Machine,AD20T/S,5.04,20,69,Chengdu-2
+Dicing Machine,AD3000T-HC PLUS,5.04,15,70,Kunming
+Dicing Machine,AD3000T-HC PLUS,5.04,15,71,Kunming
+Dicing Machine,AD3000T-HC PLUS,5.04,5,72,Fuzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,10,73,Guangzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,1,74,Xi'an-1
+Dicing Machine,AD3000T-HC PLUS,5.04,3,75,Harbin
+Dicing Machine,AD3000T-PLUS,0.27,1,76,Xi'an-1
+Dicing Machine,AD3000T-PLUS,0.27,17,77,Zhengzhou
+Dicing Machine,AD3000T-PLUS,0.27,5,78,Fuzhou
+Dicing Machine,AD3000T-PLUS,0.27,15,79,Kunming
+Dicing Machine,AD3000T-PLUS,0.27,17,80,Zhengzhou
+Dicing Machine,AD3000T-PLUS,0.27,2,81,Beijing-1
+Dicing Machine,SS10,5.04,18,82,Shenzhen-1
+Dicing Machine,SS10,5.04,6,83,Jinan
+Dicing Machine,SS10,5.04,2,84,Beijing-1
+Dicing Machine,SS10,5.04,13,85,Shenzhen-3
+Dicing Machine,SS10,5.04,5,86,Fuzhou
+Dicing Machine,SS10,5.04,11,87,Beijing-2
+Dicing Machine,SS10,5.04,11,88,Beijing-2
+Dicing Machine,SS20,5.04,9,89,Xi'an-3
+Dicing Machine,SS20,5.04,5,90,Fuzhou
+Dicing Machine,SS20,5.04,15,91,Kunming
+Dicing Machine,SS20,5.04,5,92,Fuzhou
+Dicing Machine,SS20,5.04,6,93,Jinan
+Dicing Machine,SS30,2.16,12,94,Chengdu-1
+Dicing Machine,SS30,2.16,20,95,Chengdu-2
+Dicing Machine,SS30,2.16,8,96,Shenyang
+Dicing Machine,SS30,2.16,12,97,Chengdu-1
+Dicing Machine,SS30,2.16,4,98,Nanjing
+Dicing Machine,AD2000T/S,5.04,5,99,Fuzhou
+Dicing Machine,AD2000T/S,5.04,9,100,Xi'an-3
+Dicing Machine,AD2000T/S,5.04,9,101,Xi'an-3
+Dicing Machine,AD2000T/S,5.04,17,102,Zhengzhou
+Dicing Machine,AD2000T/S,5.04,11,103,Beijing-2
+Dicing Machine,AD2000T/S,5.04,19,104,Shenzhen-2
+Dicing Machine,AD20T/S,5.04,10,105,Guangzhou
+Dicing Machine,AD20T/S,5.04,11,106,Beijing-2
+Dicing Machine,AD20T/S,5.04,7,107,Chongqing
+Dicing Machine,AD20T/S,5.04,16,108,Xi'an-2
+Dicing Machine,AD20T/S,5.04,10,109,Guangzhou
+Dicing Machine,AD20T/S,5.04,7,110,Chongqing
+Dicing Machine,AD3000T-HC PLUS,5.04,12,111,Chengdu-1
+Dicing Machine,AD3000T-HC PLUS,5.04,16,112,Xi'an-2
+Dicing Machine,AD3000T-HC PLUS,5.04,5,113,Fuzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,17,114,Zhengzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,15,115,Kunming
+Dicing Machine,AD3000T-HC PLUS,5.04,10,116,Guangzhou
+Dicing Machine,AD3000T-PLUS,0.27,13,117,Shenzhen-3
+Dicing Machine,SS30,2.16,14,118,Shanghai
+Dicing Machine,SS30,2.16,1,119,Xi'an-1
+Dicing Machine,SS30,2.16,12,120,Chengdu-1
+Dicing Machine,SS30,2.16,14,121,Shanghai
+Dicing Machine,SS30,2.16,9,122,Xi'an-3
+Dicing Machine,AD2000T/S,5.04,17,123,Zhengzhou
+Dicing Machine,AD2000T/S,5.04,18,124,Shenzhen-1
+Dicing Machine,AD2000T/S,5.04,7,125,Chongqing
+Dicing Machine,AD2000T/S,5.04,7,126,Chongqing
+Dicing Machine,AD2000T/S,5.04,6,127,Jinan
+Dicing Machine,AD2000T/S,5.04,6,128,Jinan
+Dicing Machine,AD20T/S,5.04,12,129,Chengdu-1
+Dicing Machine,AD20T/S,5.04,16,130,Xi'an-2
+Dicing Machine,AD20T/S,5.04,5,131,Fuzhou
+Dicing Machine,AD20T/S,5.04,7,132,Chongqing
+Dicing Machine,AD20T/S,5.04,5,133,Fuzhou
+Dicing Machine,AD20T/S,5.04,9,134,Xi'an-3
+Dicing Machine,AD3000T-HC PLUS,5.04,4,135,Nanjing
+Dicing Machine,AD3000T-HC PLUS,5.04,10,136,Guangzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,1,137,Xi'an-1
+Dicing Machine,AD3000T-HC PLUS,5.04,6,138,Jinan
+Dicing Machine,AD3000T-HC PLUS,5.04,17,139,Zhengzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,15,140,Kunming
+Dicing Machine,AD3000T-PLUS,0.27,4,141,Nanjing
+Dicing Machine,AD2000T/S,5.04,19,142,Shenzhen-2
+Dicing Machine,AD2000T/S,5.04,17,143,Zhengzhou
+Dicing Machine,AD2000T/S,5.04,8,144,Shenyang
+Dicing Machine,AD2000T/S,5.04,7,145,Chongqing
+Dicing Machine,AD2000T/S,5.04,8,146,Shenyang
+Dicing Machine,AD2000T/S,5.04,6,147,Jinan
+Dicing Machine,AD20T/S,5.04,8,148,Shenyang
+Dicing Machine,AD20T/S,5.04,3,149,Harbin
+Dicing Machine,AD20T/S,5.04,2,150,Beijing-1
+Dicing Machine,AD20T/S,5.04,12,151,Chengdu-1
+Dicing Machine,AD20T/S,5.04,15,152,Kunming
+Dicing Machine,AD20T/S,5.04,7,153,Chongqing
+Dicing Machine,AD3000T-HC PLUS,5.04,5,154,Fuzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,8,155,Shenyang
+Dicing Machine,AD3000T-HC PLUS,5.04,9,156,Xi'an-3
+Dicing Machine,AD3000T-HC PLUS,5.04,7,157,Chongqing
+Dicing Machine,AD3000T-HC PLUS,5.04,10,158,Guangzhou
+Dicing Machine,AD3000T-HC PLUS,5.04,12,159,Chengdu-1
+Dicing Machine,AD3000T-PLUS,0.27,13,160,Shenzhen-3
+Dicing Machine,SS30,2.16,6,161,Jinan
+Dicing Machine,SS30,2.16,6,162,Jinan
+Dicing Machine,SS30,2.16,15,163,Kunming
+Dicing Machine,SS30,2.16,12,164,Chengdu-1
+Dicing Machine,SS30,2.16,12,165,Chengdu-1
+Dressing Plate,,2.16,7,166,Chongqing
+Dressing Plate,,2.16,8,167,Shenyang
+Dressing Plate,,2.16,19,168,Shenzhen-2
+Dressing Plate,,2.16,11,169,Beijing-2
+Dressing Plate,,2.16,19,170,Shenzhen-2
+Dressing Plate,,2.16,6,171,Jinan
+Dressing Plate,,2.16,18,172,Shenzhen-1
+Dressing Plate,,2.16,13,173,Shenzhen-3
+Dressing Plate,,2.16,19,174,Shenzhen-2
+Dressing Plate,,2.16,5,175,Fuzhou
+Dressing Plate,,2.16,7,176,Chongqing
+Dressing Plate,,2.16,3,177,Harbin
+Dressing Plate,,2.16,6,178,Jinan
+Dressing Plate,,2.16,4,179,Nanjing
+Dressing Plate,,2.16,8,180,Shenyang
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,18,181,Shenzhen-1
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,18,182,Shenzhen-1
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,14,183,Shanghai
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,18,184,Shenzhen-1
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,2,185,Beijing-1
+Fully Automatic High Rigid Twin Axis Grinder,HRG200X,10.08,16,186,Xi'an-2
+High Rigid Grinder,HRG300/HRG300A,22.4,6,187,Jinan
+High Rigid Grinder,HRG300/HRG300A,22.4,20,188,Chengdu-2
+High Rigid Grinder,HRG300/HRG300A,22.4,8,189,Shenyang
+High Rigid Grinder,HRG3000RMX,16.8,10,190,Guangzhou
+High Rigid Grinder,HRG3000RMX,16.8,4,191,Nanjing
+High Rigid Grinder,HRG300/HRG300A,22.4,3,192,Harbin
+High Rigid Grinder,HRG300/HRG300A,22.4,2,193,Beijing-1
+High Rigid Grinder,HRG300/HRG300A,22.4,13,194,Shenzhen-3
+High Rigid Grinder,HRG3000RMX,16.8,13,195,Shenzhen-3
+High Rigid Grinder,HRG3000RMX,16.8,7,196,Chongqing
+Hub Type Blades,FTB/CCB series,14.93,14,197,Shanghai
+Hub Type Blades,FTB/CCB series,14.93,13,198,Shenzhen-3
+Hub Type Blades,FTB/CCB series,14.93,1,199,Xi'an-1
+Hub Type Blades,FTB/CCB series,14.93,3,200,Harbin
+Hub Type Blades,FTB/CCB series,14.93,5,201,Fuzhou
+Hub Type Blades,FTB/CCB series,14.93,5,202,Fuzhou
+Hub Type Blades,FTB/CCB series,14.93,15,203,Kunming
+Hub Type Blades,FTB/CCB series,14.93,11,204,Beijing-2
+Hub Type Blades,FTB/CCB series,14.93,3,205,Harbin
+Hub Type Blades,FTB/CCB series,14.93,19,206,Shenzhen-2
+Hub Type Blades,FTB/CCB series,14.93,12,207,Chengdu-1
+Hub Type Blades,FTB/CCB series,14.93,15,208,Kunming
+Hub Type Blades,FTB/CCB series,14.93,12,209,Chengdu-1
+Hub Type Blades,FTB/CCB series,14.93,4,210,Nanjing
+Laser Dicing Machine,ML301EXWH,16.8,3,211,Harbin
+Laser Dicing Machine,ML301EXWH,16.8,12,212,Chengdu-1
+Laser Dicing Machine,ML301EXWH,16.8,18,213,Shenzhen-1
+Laser Dicing Machine,ML301EXWH,16.8,17,214,Zhengzhou
+Laser Dicing Machine,ML301EXWH,16.8,13,215,Shenzhen-3
+Laser Dicing Machine,ML301EXWH,16.8,12,216,Chengdu-1
+Laser Dicing Machine,ML301EXWH,16.8,20,217,Chengdu-2
+Laser Dicing Machine,ML301EXWH,16.8,2,218,Beijing-1
+Laser Dicing Machine,ML301EXWH,16.8,12,219,Chengdu-1
+Laser Dicing Machine,ML301EXWH,16.8,7,220,Chongqing
+Metal Bond Blades,GM Series,14.93,12,221,Chengdu-1
+Metal Bond Blades,GM Series,14.93,18,222,Shenzhen-1
+Metal Bond Blades,GM Series,14.93,15,223,Kunming
+Metal Bond Blades,GM Series,14.93,5,224,Fuzhou
+Metal Bond Blades,GM Series,14.93,7,225,Chongqing
+Metal Bond Blades,GM Series,14.93,15,226,Kunming
+Metal Bond Blades,GM Series,14.93,16,227,Xi'an-2
+Metal Bond Blades,GM Series,14.93,7,228,Chongqing
+Metal Bond Blades,GM Series,14.93,15,229,Kunming
+Metal Bond Blades,GM Series,14.93,16,230,Xi'an-2
+Metal Bond Blades,GM Series,14.93,2,231,Beijing-1
+Metal Bond Blades,HM Series,0.27,8,232,Shenyang
+Metal Bond Blades,HM Series,0.27,18,233,Shenzhen-1
+Metal Bond Blades,HM Series,0.27,6,234,Jinan
+Metal Bond Blades,HM Series,0.27,9,235,Xi'an-3
+Metal Bond Blades,HM Series,0.27,12,236,Chengdu-1
+Metal Bond Blades,HM Series,0.27,15,237,Kunming
+Metal Bond Blades,HM Series,0.27,2,238,Beijing-1
+Metal Bond Blades,HM Series,0.27,14,239,Shanghai
+Metal Bond Blades,HM Series,0.27,6,240,Jinan
+Metal Bond Blades,HM Series,0.27,15,241,Kunming
+Metal Bond Blades,HM Series,0.27,13,242,Shenzhen-3
+Metal Bond Blades,HM Series,0.27,5,243,Fuzhou
+Metal Bond Blades,YM/AM Series,14.93,13,244,Shenzhen-3
+Metal Bond Blades,YM/AM Series,14.93,9,245,Xi'an-3
+Metal Bond Blades,YM/AM Series,14.93,11,246,Beijing-2
+Metal Bond Blades,YM/AM Series,14.93,1,247,Xi'an-1
+Metal Bond Blades,YM/AM Series,14.93,3,248,Harbin
+Metal Bond Blades,YM/AM Series,14.93,7,249,Chongqing
+Metal Bond Blades,YM/AM Series,14.93,2,250,Beijing-1
+Metal Bond Blades,YM/AM Series,14.93,17,251,Zhengzhou
+Metal Bond Blades,YM/AM Series,14.93,5,252,Fuzhou
+Metal Bond Blades,YM/AM Series,14.93,6,253,Jinan
+Metal Bond Blades,YM/AM Series,14.93,3,254,Harbin
+Metal Bond Blades,YM/AM Series,14.93,15,255,Kunming
+Metal Bond Blades,GM Series,14.93,19,256,Shenzhen-2
+Metal Bond Blades,GM Series,14.93,5,257,Fuzhou
+Metal Bond Blades,GM Series,14.93,7,258,Chongqing
+Metal Bond Blades,GM Series,14.93,12,259,Chengdu-1
+Metal Bond Blades,GM Series,14.93,11,260,Beijing-2
+Metal Bond Blades,GM Series,14.93,2,261,Beijing-1
+Metal Bond Blades,GM Series,14.93,4,262,Nanjing
+Metal Bond Blades,GM Series,14.93,9,263,Xi'an-3
+Metal Bond Blades,GM Series,14.93,4,264,Nanjing
+Metal Bond Blades,GM Series,14.93,5,265,Fuzhou
+Metal Bond Blades,GM Series,14.93,6,266,Jinan
+Metal Bond Blades,HM Series,0.27,2,267,Beijing-1
+Metal Bond Blades,HM Series,0.27,1,268,Xi'an-1
+Metal Bond Blades,HM Series,0.27,11,269,Beijing-2
+Metal Bond Blades,HM Series,0.27,16,270,Xi'an-2
+Metal Bond Blades,HM Series,0.27,9,271,Xi'an-3
+Metal Bond Blades,HM Series,0.27,8,272,Shenyang
+Metal Bond Blades,HM Series,0.27,12,273,Chengdu-1
+Metal Bond Blades,HM Series,0.27,15,274,Kunming
+Metal Bond Blades,HM Series,0.27,1,275,Xi'an-1
+Metal Bond Blades,HM Series,0.27,14,276,Shanghai
+Metal Bond Blades,HM Series,0.27,5,277,Fuzhou
+Metal Bond Blades,HM Series,0.27,9,278,Xi'an-3
+Metal Bond Blades,YM/AM Series,14.93,4,279,Nanjing
+Metal Bond Blades,YM/AM Series,14.93,7,280,Chongqing
+Metal Bond Blades,YM/AM Series,14.93,3,281,Harbin
+Metal Bond Blades,YM/AM Series,14.93,20,282,Chengdu-2
+Metal Bond Blades,YM/AM Series,14.93,12,283,Chengdu-1
+Metal Bond Blades,YM/AM Series,14.93,11,284,Beijing-2
+Metal Bond Blades,YM/AM Series,14.93,17,285,Zhengzhou
+Metal Bond Blades,YM/AM Series,14.93,15,286,Kunming
+Metal Bond Blades,YM/AM Series,14.93,16,287,Xi'an-2
+Metal Bond Blades,YM/AM Series,14.93,6,288,Jinan
+Metal Bond Blades,YM/AM Series,14.93,7,289,Chongqing
+Metal Bond Blades,YM/AM Series,14.93,4,290,Nanjing
+Nickel Bond Blades,DS type,0.27,14,291,Shanghai
+Nickel Bond Blades,DS type,0.27,2,292,Beijing-1
+Nickel Bond Blades,DS type,0.27,6,293,Jinan
+Nickel Bond Blades,DS type,0.27,5,294,Fuzhou
+Nickel Bond Blades,DS type,0.27,14,295,Shanghai
+Nickel Bond Blades,MN HALF SLIT type,0.27,7,296,Chongqing
+Nickel Bond Blades,MN HALF SLIT type,0.27,2,297,Beijing-1
+Nickel Bond Blades,MN HALF SLIT type,0.27,8,298,Shenyang
+Nickel Bond Blades,MN HALF SLIT type,0.27,7,299,Chongqing
+Nickel Bond Blades,MN HALF SLIT type,0.27,5,300,Fuzhou
+Nickel Bond Blades,MN type,0.27,10,301,Guangzhou
+Nickel Bond Blades,MN type,0.27,11,302,Beijing-2
+Nickel Bond Blades,MN type,0.27,17,303,Zhengzhou
+Nickel Bond Blades,MN type,0.27,2,304,Beijing-1
+Nickel Bond Blades,MN type,0.27,16,305,Xi'an-2
+Nickel Bond Blades,MN type,0.27,17,306,Zhengzhou
+Nickel Bond Blades,MN type,0.27,17,307,Zhengzhou
+Nickel Bond Blades,MN type,0.27,18,308,Shenzhen-1
+Nickel Bond Blades,MN type,0.27,7,309,Chongqing
+Nickel Bond Blades,MN type,0.27,16,310,Xi'an-2
+Nickel Bond Blades,MN type,0.27,14,311,Shanghai
+Nickel Bond Blades,MN type,0.27,4,312,Nanjing
+Nickel Bond Blades,DS type,0.27,7,313,Chongqing
+Nickel Bond Blades,DS type,0.27,14,314,Shanghai
+Nickel Bond Blades,DS type,0.27,16,315,Xi'an-2
+Nickel Bond Blades,DS type,0.27,14,316,Shanghai
+Nickel Bond Blades,DS type,0.27,3,317,Harbin
+Nickel Bond Blades,MN HALF SLIT type,0.27,4,318,Nanjing
+Nickel Bond Blades,MN HALF SLIT type,0.27,1,319,Xi'an-1
+Nickel Bond Blades,MN HALF SLIT type,0.27,8,320,Shenyang
+Nickel Bond Blades,MN HALF SLIT type,0.27,16,321,Xi'an-2
+Nickel Bond Blades,MN HALF SLIT type,0.27,4,322,Nanjing
+Nickel Bond Blades,MN type,0.27,11,323,Beijing-2
+Nickel Bond Blades,MN type,0.27,16,324,Xi'an-2
+Nickel Bond Blades,MN type,0.27,6,325,Jinan
+Nickel Bond Blades,MN type,0.27,16,326,Xi'an-2
+Nickel Bond Blades,MN type,0.27,16,327,Xi'an-2
+Nickel Bond Blades,MN type,0.27,17,328,Zhengzhou
+Nickel Bond Blades,MN type,0.27,8,329,Shenyang
+Nickel Bond Blades,MN type,0.27,13,330,Shenzhen-3
+Nickel Bond Blades,MN type,0.27,16,331,Xi'an-2
+Nickel Bond Blades,MN type,0.27,5,332,Fuzhou
+Nickel Bond Blades,MN type,0.27,3,333,Harbin
+Nickel Bond Blades,MN type,0.27,18,334,Shenzhen-1
+Polish Grinder,PG3000RMX,4.97,20,335,Chengdu-2
+Polish Grinder,PG3000RMX,4.97,7,336,Chongqing
+Polish Grinder,PG3000RMX,4.97,9,337,Xi'an-3
+Polish Grinder,PG3000RMX,4.97,17,338,Zhengzhou
+Probing Machine,AltaProv,10.08,17,339,Zhengzhou
+Probing Machine,AltaProv,10.08,19,340,Shenzhen-2
+Probing Machine,AltaProv,10.08,12,341,Chengdu-1
+Probing Machine,AltaProv,10.08,3,342,Harbin
+Probing Machine,AP3000/AP3000e,16.8,4,343,Nanjing
+Probing Machine,AP3000/AP3000e,16.8,4,344,Nanjing
+Probing Machine,AP3000/AP3000e,16.8,19,345,Shenzhen-2
+Probing Machine,AP3000/AP3000e,16.8,18,346,Shenzhen-1
+Probing Machine,FP2000,10.08,11,347,Beijing-2
+Probing Machine,FP2000,10.08,14,348,Shanghai
+Probing Machine,FP2000,10.08,19,349,Shenzhen-2
+Probing Machine,FP2000,10.08,16,350,Xi'an-2
+Probing Machine,FP3000,16.8,2,351,Beijing-1
+Probing Machine,FP3000,16.8,17,352,Zhengzhou
+Probing Machine,FP3000,16.8,19,353,Shenzhen-2
+Probing Machine,FP3000,16.8,10,354,Guangzhou
+Probing Machine,UF190R,10.08,15,355,Kunming
+Probing Machine,UF190R,10.08,5,356,Fuzhou
+Probing Machine,UF190R,10.08,7,357,Chongqing
+Probing Machine,UF190R,10.08,1,358,Xi'an-1
+Probing Machine,UF2000,5.04,9,359,Xi'an-3
+Probing Machine,UF2000,5.04,13,360,Shenzhen-3
+Probing Machine,UF2000,5.04,19,361,Shenzhen-2
+Probing Machine,UF200R,10.08,19,362,Shenzhen-2
+Probing Machine,UF200R,10.08,14,363,Shanghai
+Probing Machine,UF200R,10.08,10,364,Guangzhou
+Probing Machine,UF3000LX,16.8,10,365,Guangzhou
+Probing Machine,UF3000LX,16.8,16,366,Xi'an-2
+Probing Machine,UF3000LX,16.8,12,367,Chengdu-1
+Probing Machine,AltaProv,10.08,18,368,Shenzhen-1
+Probing Machine,AltaProv,10.08,4,369,Nanjing
+Probing Machine,AltaProv,10.08,11,370,Beijing-2
+Probing Machine,AltaProv,10.08,10,371,Guangzhou
+Probing Machine,AP3000/AP3000e,16.8,11,372,Beijing-2
+Probing Machine,AP3000/AP3000e,16.8,17,373,Zhengzhou
+Probing Machine,AP3000/AP3000e,16.8,9,374,Xi'an-3
+Probing Machine,AP3000/AP3000e,16.8,6,375,Jinan
+Probing Machine,FP2000,10.08,7,376,Chongqing
+Probing Machine,FP2000,10.08,8,377,Shenyang
+Probing Machine,FP2000,10.08,9,378,Xi'an-3
+Probing Machine,FP2000,10.08,10,379,Guangzhou
+Probing Machine,FP3000,16.8,16,380,Xi'an-2
+Probing Machine,FP3000,16.8,8,381,Shenyang
+Probing Machine,FP3000,16.8,7,382,Chongqing
+Probing Machine,FP3000,16.8,14,383,Shanghai
+Probing Machine,UF190R,10.08,11,384,Beijing-2
+Probing Machine,UF190R,10.08,17,385,Zhengzhou
+Probing Machine,UF190R,10.08,8,386,Shenyang
+Probing Machine,UF190R,10.08,18,387,Shenzhen-1
+Probing Machine,UF2000,5.04,6,388,Jinan
+Probing Machine,UF2000,5.04,16,389,Xi'an-2
+Probing Machine,UF2000,5.04,6,390,Jinan
+Probing Machine,UF200R,10.08,5,391,Fuzhou
+Probing Machine,UF200R,10.08,10,392,Guangzhou
+Probing Machine,UF200R,10.08,2,393,Beijing-1
+Probing Machine,UF3000LX,16.8,14,394,Shanghai
+Probing Machine,UF3000LX,16.8,6,395,Jinan
+Probing Machine,UF3000LX,16.8,16,396,Xi'an-2
+Probing Machine,UF2000,5.04,14,397,Shanghai
+Probing Machine,UF2000,5.04,9,398,Xi'an-3
+Probing Machine,UF2000,5.04,2,399,Beijing-1
+Probing Machine,UF200R,10.08,5,400,Fuzhou
+Probing Machine,UF200R,10.08,12,401,Chengdu-1
+Probing Machine,UF200R,10.08,11,402,Beijing-2
+Probing Machine,UF3000LX,16.8,17,403,Zhengzhou
+Probing Machine,UF3000LX,16.8,3,404,Harbin
+Probing Machine,UF3000LX,16.8,18,405,Shenzhen-1
+Probing Machines Network,GEM Network System,4.97,11,406,Beijing-2
+Probing Machines Network,GEM Network System,4.97,5,407,Fuzhou
+Probing Machines Network,LIGHTVEGA,16.8,6,408,Jinan
+Probing Machines Network,LIGHTVEGA,16.8,14,409,Shanghai
+Probing Machines Network,VEGA PLANET,4.97,12,410,Chengdu-1
+Probing Machines Network,VEGA PLANET,4.97,10,411,Guangzhou
+Probing Machines Network,VEGANET,22.4,7,412,Chongqing
+Probing Machines Network,VEGANET,22.4,19,413,Shenzhen-2
+Probing Machines Network,VEGANET,22.4,1,414,Xi'an-1
+Probing Machines Network,GEM Network System,4.97,20,415,Chengdu-2
+Probing Machines Network,GEM Network System,4.97,8,416,Shenyang
+Probing Machines Network,LIGHTVEGA,16.8,16,417,Xi'an-2
+Probing Machines Network,LIGHTVEGA,16.8,15,418,Kunming
+Probing Machines Network,VEGA PLANET,4.97,13,419,Shenzhen-3
+Probing Machines Network,VEGA PLANET,4.97,3,420,Harbin
+Probing Machines Network,VEGANET,22.4,12,421,Chengdu-1
+Probing Machines Network,VEGANET,22.4,13,422,Shenzhen-3
+Probing Machines Network,VEGANET,22.4,6,423,Jinan
+Probing Machines Network,GEM Network System,4.97,6,424,Jinan
+Probing Machines Network,GEM Network System,4.97,13,425,Shenzhen-3
+Probing Machines Network,LIGHTVEGA,16.8,2,426,Beijing-1
+Probing Machines Network,LIGHTVEGA,16.8,4,427,Nanjing
+Probing Machines Network,VEGA PLANET,4.97,16,428,Xi'an-2
+Probing Machines Network,VEGA PLANET,4.97,15,429,Kunming
+Probing Machines Network,VEGANET,22.4,12,430,Chengdu-1
+Probing Machines Network,VEGANET,22.4,20,431,Chengdu-2
+Probing Machines Network,VEGANET,22.4,18,432,Shenzhen-1
+Resin Bond Blade,GC series,0.27,18,433,Shenzhen-1
+Resin Bond Blade,GC series,0.27,10,434,Guangzhou
+Resin Bond Blade,GC series,0.27,15,435,Kunming
+Resin Bond Blade,GC series,0.27,7,436,Chongqing
+Resin Bond Blade,GC series,0.27,16,437,Xi'an-2
+Resin Bond Blade,PG Series,5.04,6,438,Jinan
+Resin Bond Blade,PG Series,5.04,8,439,Shenyang
+Resin Bond Blade,PG Series,5.04,7,440,Chongqing
+Resin Bond Blade,PG Series,5.04,14,441,Shanghai
+Resin Bond Blade,PG Series,5.04,16,442,Xi'an-2
+Resin Bond Blade,GC series,0.27,14,443,Shanghai
+Resin Bond Blade,GC series,0.27,20,444,Chengdu-2
+Resin Bond Blade,PG Series,5.04,1,445,Xi'an-1
+Resin Bond Blade,PG Series,5.04,10,446,Guangzhou
+Resin Bond Blade,PG Series,5.04,17,447,Zhengzhou
+Resin Bond Blade,PG Series,5.04,11,448,Beijing-2
+Resin Bond Blade,PG Series,5.04,4,449,Nanjing
+Resin Bond Blade,GC series,0.27,3,450,Harbin
+Resin Bond Blade,GC series,0.27,13,451,Shenzhen-3
+Resin Bond Blade,GC series,0.27,1,452,Xi'an-1
+Resin Bond Blade,GC series,0.27,11,453,Beijing-2
+Resin Bond Blade,GC series,0.27,15,454,Kunming
+Resin Bond Blade,PG Series,5.04,14,455,Shanghai
+Resin Bond Blade,PG Series,5.04,15,456,Kunming
+Resin Bond Blade,PG Series,5.04,19,457,Shenzhen-2
+Resin Bond Blade,PG Series,5.04,17,458,Zhengzhou
+Resin Bond Blade,PG Series,5.04,12,459,Chengdu-1
+Resin Bond Blade,GC series,0.27,15,460,Kunming
+Resin Bond Blade,GC series,0.27,4,461,Nanjing
+Resin Bond Blade,PG Series,5.04,13,462,Shenzhen-3
+Resin Bond Blade,PG Series,5.04,4,463,Nanjing
+Resin Bond Blade,PG Series,5.04,15,464,Kunming
+Resin Bond Blade,PG Series,5.04,17,465,Zhengzhou
+Resin Bond Blade,PG Series,5.04,19,466,Shenzhen-2
+Resin Bond Blade,GC series,0.27,7,467,Chongqing
+Resin Bond Blade,GC series,0.27,18,468,Shenzhen-1
+Resin Bond Blade,GC series,0.27,17,469,Zhengzhou
+Resin Bond Blade,GC series,0.27,20,470,Chengdu-2
+Resin Bond Blade,GC series,0.27,2,471,Beijing-1
+Resin Bond Blade,PG Series,5.04,6,472,Jinan
+Resin Bond Blade,PG Series,5.04,15,473,Kunming
+Resin Bond Blade,PG Series,5.04,16,474,Xi'an-2
+Resin Bond Blade,PG Series,5.04,19,475,Shenzhen-2
+Resin Bond Blade,PG Series,5.04,2,476,Beijing-1
+Resin Bond Blade,GC series,0.27,10,477,Guangzhou
+Resin Bond Blade,GC series,0.27,6,478,Jinan
+Resin Bond Blade,PG Series,5.04,13,479,Shenzhen-3
+Resin Bond Blade,PG Series,5.04,20,480,Chengdu-2
+Resin Bond Blade,PG Series,5.04,13,481,Shenzhen-3
+Resin Bond Blade,PG Series,5.04,9,482,Xi'an-3
+Resin Bond Blade,PG Series,5.04,14,483,Shanghai
+Singulation Machine,PS300,2.16,5,484,Fuzhou
+Singulation Machine,PS300,2.16,13,485,Shenzhen-3
+Singulation Machine,PS300,2.16,13,486,Shenzhen-3
+Singulation Machine,PS300,2.16,14,487,Shanghai
+Singulation Machine,PS300,2.16,7,488,Chongqing
+Singulation Machine,PS300,2.16,11,489,Beijing-2
+Singulation Machine,PS300,2.16,4,490,Nanjing
+Singulation Machine,PS300,2.16,4,491,Nanjing
+Singulation Machine,PS300,2.16,18,492,Shenzhen-1
+Singulation Machine,PS300,2.16,13,493,Shenzhen-3
+Singulation Machine,PS300,2.16,19,494,Shenzhen-2
+Singulation Machine,PS300,2.16,13,495,Shenzhen-3
+Singulation Machine,PS300,2.16,1,496,Xi'an-1
+Singulation Machine,PS300,2.16,2,497,Beijing-1
+Singulation Machine,PS300,2.16,15,498,Kunming
+Singulation Machine,PS300,2.16,12,499,Chengdu-1
+Singulation Machine,PS300,2.16,1,500,Xi'an-1
+Singulation Machine,PS300,2.16,19,501,Shenzhen-2
+Singulation Machine,PS300,2.16,20,502,Chengdu-2
+Singulation Machine,PS300,2.16,10,503,Guangzhou
+Singulation Machine,PS300,2.16,19,504,Shenzhen-2
+Singulation Machine,PS300,2.16,16,505,Xi'an-2
+Singulation Machine,PS300,2.16,20,506,Chengdu-2
+Singulation Machine,PS300,2.16,2,507,Beijing-1
+Singulation Machine,PS300,2.16,19,508,Shenzhen-2
+Singulation Machine,PS300,2.16,11,509,Beijing-2
+Singulation Machine,PS300,2.16,17,510,Zhengzhou
+Singulation Machine,PS300,2.16,5,511,Fuzhou
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,1,512,Xi'an-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,1,513,Xi'an-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,14,514,Shanghai
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,16,515,Xi'an-2
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,7,516,Chongqing
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,1,517,Xi'an-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,1,518,Xi'an-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,10,519,Guangzhou
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,9,520,Xi'an-3
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,7,521,Chongqing
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,18,522,Shenzhen-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,5,523,Fuzhou
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,6,524,Jinan
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,7,525,Chongqing
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,14,526,Shanghai
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,20,527,Chengdu-2
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,18,528,Shenzhen-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,8,529,Shenyang
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,12,530,Chengdu-1
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,7,531,Chongqing
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,7,532,Chongqing
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,13,533,Shenzhen-3
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,8,534,Shenyang
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,13,535,Shenzhen-3
+Sliced Wafer Demounting and Cleaning Machine,C-RW Series,10.41,2,536,Beijing-1
+Ultra Hard Metal Saws,,14.93,18,537,Shenzhen-1
+Ultra Hard Metal Saws,,14.93,16,538,Xi'an-2
+Ultra Hard Metal Saws,,14.93,15,539,Kunming
+Ultra Hard Metal Saws,,14.93,17,540,Zhengzhou
+Ultra Hard Metal Saws,,14.93,12,541,Chengdu-1
+Ultra Hard Metal Saws,,14.93,2,542,Beijing-1
+Ultra Hard Metal Saws,,14.93,3,543,Harbin
+Ultra Hard Metal Saws,,14.93,19,544,Shenzhen-2
+Ultra Hard Metal Saws,,14.93,1,545,Xi'an-1
+Ultra Hard Metal Saws,,14.93,4,546,Nanjing
+Ultra Hard Metal Saws,,14.93,8,547,Shenyang
+Ultra Hard Metal Saws,,14.93,19,548,Shenzhen-2
+Ultra Hard Metal Saws,,14.93,8,549,Shenyang
+Ultra Hard Metal Saws,,14.93,6,550,Jinan
+Ultra Hard Metal Saws,,14.93,17,551,Zhengzhou
+Ultra Hard Metal Saws,,14.93,6,552,Jinan
+Ultra Hard Metal Saws,,14.93,5,553,Fuzhou
+Ultra Hard Metal Saws,,14.93,14,554,Shanghai
+Ultra Hard Metal Saws,,14.93,12,555,Chengdu-1
+Ultra Hard Metal Saws,,14.93,7,556,Chongqing
+Ultra Hard Metal Saws,,14.93,1,557,Xi'an-1
+Ultra Hard Metal Saws,,14.93,13,558,Shenzhen-3
+Ultra Hard Metal Saws,,14.93,1,559,Xi'an-1
+Ultra Hard Metal Saws,,14.93,2,560,Beijing-1
+Ultra Hard Metal Saws,,14.93,1,561,Xi'an-1
+Ultra Hard Metal Saws,,14.93,9,562,Xi'an-3
+Ultra Hard Metal Saws,,14.93,3,563,Harbin
+Ultra Hard Metal Saws,,14.93,7,564,Chongqing
+Ultra Hard Metal Saws,,14.93,14,565,Shanghai
+Ultra Hard Metal Saws,,14.93,6,566,Jinan
+Ultra Hard Metal Saws,,14.93,14,567,Shanghai
+Ultra Hard Metal Saws,,14.93,1,568,Xi'an-1
+Ultra Hard Metal Saws,,14.93,13,569,Shenzhen-3
+Ultra Hard Metal Saws,,14.93,20,570,Chengdu-2
+Ultra Hard Metal Saws,,14.93,12,571,Chengdu-1
+Wafer Edge Grinding machine,W-GM-4200,10.08,11,572,Beijing-2
+Wafer Edge Grinding machine,W-GM-4200,10.08,1,573,Xi'an-1
+Wafer Edge Grinding machine,W-GM-4200,10.08,9,574,Xi'an-3
+Wafer Edge Grinding machine,W-GM-4200,10.08,14,575,Shanghai
+Wafer Edge Grinding machine,W-GM-5200,10.08,14,576,Shanghai
+Wafer Edge Grinding machine,W-GM-5200,10.08,20,577,Chengdu-2
+Wafer Edge Grinding machine,W-GM-5200,10.08,13,578,Shenzhen-3
+Wafer Edge Grinding machine,W-GM-5200,10.08,18,579,Shenzhen-1
+Wafer Edge Grinding machine,W-GM-6200,10.41,4,580,Nanjing
+Wafer Edge Grinding machine,W-GM-6200,10.41,8,581,Shenyang
+Wafer Edge Grinding machine,W-GM-6200,10.41,5,582,Fuzhou
+Wafer Edge Grinding machine,W-GM-6200,10.41,9,583,Xi'an-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,11,584,Beijing-2
+Wafer Edge Grinding machine,W-GM-4200,10.08,4,585,Nanjing
+Wafer Edge Grinding machine,W-GM-4200,10.08,3,586,Harbin
+Wafer Edge Grinding machine,W-GM-4200,10.08,20,587,Chengdu-2
+Wafer Edge Grinding machine,W-GM-4200,10.08,19,588,Shenzhen-2
+Wafer Edge Grinding machine,W-GM-5200,10.08,14,589,Shanghai
+Wafer Edge Grinding machine,W-GM-5200,10.08,18,590,Shenzhen-1
+Wafer Edge Grinding machine,W-GM-5200,10.08,12,591,Chengdu-1
+Wafer Edge Grinding machine,W-GM-5200,10.08,11,592,Beijing-2
+Wafer Edge Grinding machine,W-GM-6200,10.41,19,593,Shenzhen-2
+Wafer Edge Grinding machine,W-GM-6200,10.41,9,594,Xi'an-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,11,595,Beijing-2
+Wafer Edge Grinding machine,W-GM-6200,10.41,13,596,Shenzhen-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,8,597,Shenyang
+Wafer Edge Grinding machine,W-GM-4200,10.08,10,598,Guangzhou
+Wafer Edge Grinding machine,W-GM-4200,10.08,7,599,Chongqing
+Wafer Edge Grinding machine,W-GM-4200,10.08,10,600,Guangzhou
+Wafer Edge Grinding machine,W-GM-4200,10.08,8,601,Shenyang
+Wafer Edge Grinding machine,W-GM-5200,10.08,3,602,Harbin
+Wafer Edge Grinding machine,W-GM-5200,10.08,18,603,Shenzhen-1
+Wafer Edge Grinding machine,W-GM-5200,10.08,13,604,Shenzhen-3
+Wafer Edge Grinding machine,W-GM-5200,10.08,17,605,Zhengzhou
+Wafer Edge Grinding machine,W-GM-6200,10.41,9,606,Xi'an-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,8,607,Shenyang
+Wafer Edge Grinding machine,W-GM-6200,10.41,15,608,Kunming
+Wafer Edge Grinding machine,W-GM-6200,10.41,14,609,Shanghai
+Wafer Edge Grinding machine,W-GM-6200,10.41,7,610,Chongqing
+Wafer Edge Grinding machine,W-GM-4200,10.08,5,611,Fuzhou
+Wafer Edge Grinding machine,W-GM-4200,10.08,14,612,Shanghai
+Wafer Edge Grinding machine,W-GM-4200,10.08,9,613,Xi'an-3
+Wafer Edge Grinding machine,W-GM-4200,10.08,10,614,Guangzhou
+Wafer Edge Grinding machine,W-GM-5200,10.08,7,615,Chongqing
+Wafer Edge Grinding machine,W-GM-5200,10.08,5,616,Fuzhou
+Wafer Edge Grinding machine,W-GM-5200,10.08,8,617,Shenyang
+Wafer Edge Grinding machine,W-GM-5200,10.08,17,618,Zhengzhou
+Wafer Edge Grinding machine,W-GM-6200,10.41,9,619,Xi'an-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,17,620,Zhengzhou
+Wafer Edge Grinding machine,W-GM-6200,10.41,8,621,Shenyang
+Wafer Edge Grinding machine,W-GM-6200,10.41,4,622,Nanjing
+Wafer Edge Grinding machine,W-GM-6200,10.41,12,623,Chengdu-1
+Wafer Edge Grinding machine,W-GM-4200,10.08,20,624,Chengdu-2
+Wafer Edge Grinding machine,W-GM-4200,10.08,17,625,Zhengzhou
+Wafer Edge Grinding machine,W-GM-4200,10.08,10,626,Guangzhou
+Wafer Edge Grinding machine,W-GM-4200,10.08,4,627,Nanjing
+Wafer Edge Grinding machine,W-GM-5200,10.08,18,628,Shenzhen-1
+Wafer Edge Grinding machine,W-GM-5200,10.08,19,629,Shenzhen-2
+Wafer Edge Grinding machine,W-GM-5200,10.08,1,630,Xi'an-1
+Wafer Edge Grinding machine,W-GM-5200,10.08,13,631,Shenzhen-3
+Wafer Edge Grinding machine,W-GM-6200,10.41,20,632,Chengdu-2
+Wafer Edge Grinding machine,W-GM-6200,10.41,7,633,Chongqing
+Wafer Edge Grinding machine,W-GM-6200,10.41,3,634,Harbin
+Wafer Edge Grinding machine,W-GM-6200,10.41,2,635,Beijing-1
+Wafer Edge Grinding machine,W-GM-6200,10.41,8,636,Shenyang
