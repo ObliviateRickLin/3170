@@ -1,6 +1,6 @@
 import streamlit as st
 import mysql.connector
-
+import pandas as pd
 from utils.session_control import *
 
 
@@ -25,26 +25,34 @@ def log_in_page():
     first_name = st.text_input("First name",placeholder="Yangsheng")
     last_name = st.text_input("Last name",placeholder="Xu")
     password = st.text_input("Password",placeholder="1999GJ5")
+
     # Get a cursor
     cur = cnx.cursor()
     # Execute a query
     cur.execute("""
                 SELECT ROLE  
-                FROM user_
+                FROM user
                 WHERE (FIRST_NAME = %s)
                 AND (LAST_NAME = %s)
                 AND (PASSWORD = %s);
                 """, (first_name,last_name,password))
-    role = "staff"
-    st.write(cur.fetchall())
-    st.write(len(cur.fetchall()))
+    result = cur.fetchone()
+    if result:
+        role, = result
+    elif result == None:
+        role = result
+
     # Fetch one result
     if st.button("Log In"):
-        if cur.fetchall() == None:
+        if role == None:
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
-        else:
+        elif role == "staff":
+            move_to_staff_state()
+            st.success("Log in Seccessfully as consumer. Please click the button again.")
+            st.balloons()
+        elif role == "consumer":
             move_to_consumer_state()
-            st.success("Log in Seccessfully")
+            st.success("Log in Seccessfully as staff. Please click the button again.")
             st.balloons()
 
 def sign_up_page():
