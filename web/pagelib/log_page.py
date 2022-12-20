@@ -3,8 +3,6 @@ import mysql.connector
 
 from utils.session_control import *
 
-global cnx
-
 
 def log_in_based_on_info(role):
     if st.session_state["log_check"] == False:
@@ -43,12 +41,14 @@ def log_in_page():
     elif len(cur.fetchall()) != 0:
         st.session_state["log_check"] = True
         role = cur.fetchone()
-        st.write(len(cur.fetchall()))
+        #st.write(len(cur.fetchall()))
     # Fetch one result
-    if st.button("Log In",on_click=log_in_based_on_info(role)):
-        if st.session_state["log_check"] == True:
+    if st.button("Log In"):
+        if st.session_state["log_check"] == False:
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         else:
+            st.session_state["log_check"] == True
+            move_to_consumer_state()
             st.success("Log in Seccessfully")
             st.balloons()
 
