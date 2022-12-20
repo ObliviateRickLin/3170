@@ -1,12 +1,12 @@
 import os
 import streamlit as st
 from streamlit_option_menu import option_menu as om
-from web.pagelib.log_page import *
-from web.pagelib.consumer.shopping_cart_page import *
-from web.pagelib.consumer.preview_page import *
-from web.pagelib.consumer.custormer_order_page import *
-from web.utils.session_control import *
-from web.utils.bgsetting import *
+from pagelib.log_page import *
+from pagelib.consumer.shopping_cart_page import *
+from pagelib.consumer.preview_page import *
+from pagelib.consumer.custormer_order_page import *
+from utils.session_control import *
+from utils.bgsetting import *
 
 #current path
 path = os.path.dirname(__file__)
@@ -34,7 +34,7 @@ if st.session_state["function"] == "log":
 
 elif st.session_state["function"] == "consumer":
     with st.sidebar:
-        st.image("web\images\pandas_chip_2.png")
+        st.image("images\pandas_chip_2.png")
         selected_c = om("CEND-INTERFACE", 
                         ["Introduction", 
                          "Shopping Cart",
@@ -58,7 +58,7 @@ elif st.session_state["function"] == "consumer":
 
 elif st.session_state["function"] == "staff":
     with st.sidebar:
-        st.image("web\images\pandas_chip_1.png")
+        st.image("images\pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
                         "Page1",
