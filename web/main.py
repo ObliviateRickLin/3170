@@ -1,6 +1,6 @@
+import os
 import streamlit as st
 from streamlit_option_menu import option_menu as om
-
 from pagelib.log_page import *
 from pagelib.consumer.shopping_cart_page import *
 from pagelib.consumer.preview_page import *
@@ -8,6 +8,8 @@ from pagelib.consumer.custormer_order_page import *
 from utils.session_control import *
 from utils.bgsetting import *
 
+#current path
+path = os.path.dirname(__file__)
 
 #initialize session state
 if "function" not in st.session_state:
@@ -32,7 +34,7 @@ if st.session_state["function"] == "log":
 
 elif st.session_state["function"] == "consumer":
     with st.sidebar:
-        st.image(".\images\pandas_chip_2.png")
+        st.image("./images/pandas_chip_2.png")
         selected_c = om("CEND-INTERFACE", 
                         ["Introduction", 
                          "Page1",
