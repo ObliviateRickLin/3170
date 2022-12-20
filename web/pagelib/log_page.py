@@ -4,12 +4,7 @@ import mysql.connector
 from utils.session_control import *
 
 global cnx
-cnx = mysql.connector.connect(
-host="123.60.157.95",
-port=3306,
-user="root",
-password="csc123456@",
-database="project") 
+
 
 def log_in_based_on_info(role):
     if st.session_state["log_check"] == False:
@@ -23,7 +18,12 @@ def log_in_based_on_info(role):
     return
     
 def log_in_page():
-    global cnx
+    cnx = mysql.connector.connect(
+    host="123.60.157.95",
+    port=3306,
+    user="root",
+    password="csc123456@",
+    database="project") 
     first_name = st.text_input("First name",placeholder="Yangsheng")
     last_name = st.text_input("Last name",placeholder="Xu")
     password = st.text_input("Password",placeholder="1999GJ5")
@@ -53,7 +53,12 @@ def log_in_page():
             st.balloons()
 
 def sign_up_page():
-    global cnx
+    cnx = mysql.connector.connect(
+    host="123.60.157.95",
+    port=3306,
+    user="root",
+    password="csc123456@",
+    database="project") 
     cur = cnx.cursor()
     #user_id = st.text_input("User ID")
     first_name = st.text_input("First Name")
