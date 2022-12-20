@@ -40,7 +40,7 @@ def log_in_page():
     st.write(len(cur.fetchall()))
     # Fetch one result
     if st.button("Log In"):
-        if (len(cur.fetchall())) == 0:
+        if cur.fetchall() == None:
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         else:
             move_to_consumer_state()
