@@ -34,11 +34,11 @@ if st.session_state["function"] == "log":
 
 elif st.session_state["function"] == "consumer":
     with st.sidebar:
-        st.image(path+"/images/pandas_chip_2.png")
+        st.image("web\images\pandas_chip_2.png")
         selected_c = om("CEND-INTERFACE", 
                         ["Introduction", 
-                         "Page1",
-                         "Page2"], 
+                         "Shopping Cart",
+                         "Current Order"], 
                     menu_icon =  "None",
                     icons=['house', 'ui-checks','columns','text-indent-right','ui-radios-grid','heptagon-half','eye-fill'], 
                     default_index=0)
@@ -58,11 +58,11 @@ elif st.session_state["function"] == "consumer":
 
 elif st.session_state["function"] == "staff":
     with st.sidebar:
-        st.image(path+"/images/pandas_chip_1.png")
+        st.image("web\images\pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
-                        "Shopping Cart",
-                        "Current Order"], 
+                        "Page1",
+                        "Page2"], 
                     menu_icon =  "None",
                     icons=['house', 'ui-checks','columns','text-indent-right','ui-radios-grid','heptagon-half','eye-fill'], 
                     default_index=0)
