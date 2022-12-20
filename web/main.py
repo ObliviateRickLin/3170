@@ -58,7 +58,7 @@ elif st.session_state["function"] == "consumer":
 
 elif st.session_state["function"] == "staff":
     with st.sidebar:
-        st.image(".\images\pandas_chip_1.png")
+        st.image("./images/pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
                         "Shopping Cart",
