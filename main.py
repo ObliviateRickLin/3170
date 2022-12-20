@@ -10,7 +10,7 @@ from utils.bgsetting import *
 
 #current path
 path = os.path.dirname(__file__)
-
+st.image("images\chip_img.jpg")
 #initialize session state
 if "function" not in st.session_state:
     st.session_state["function"] = "log" # RANGE in {log, staff, consumer}
