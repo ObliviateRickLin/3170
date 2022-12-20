@@ -37,12 +37,12 @@ def log_in_page():
                 """, (first_name,last_name,password))
     role = "staff"
     st.write(cur.fetchall())
+    st.write(len(cur.fetchall()))
     # Fetch one result
     if st.button("Log In"):
-        if len(cur.fetchall()) == 0:
+        if (len(cur.fetchall())) == 0:
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         else:
-            st.session_state["log_check"] == True
             move_to_consumer_state()
             st.success("Log in Seccessfully")
             st.balloons()
