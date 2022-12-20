@@ -36,12 +36,7 @@ def log_in_page():
                 AND (PASSWORD = %s);
                 """, (first_name,last_name,password))
     role = "staff"
-    if len(cur.fetchall()) == 0:
-        st.session_state["log_check"] = False
-    elif len(cur.fetchall()) != 0:
-        st.session_state["log_check"] = True
-        role = cur.fetchone()
-        #st.write(len(cur.fetchall()))
+    st.write(cur.fetchall())
     # Fetch one result
     if st.button("Log In"):
         if len(cur.fetchall()) == 0:
