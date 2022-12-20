@@ -1,7 +1,7 @@
 import streamlit as st
 
-from utils.icons import *
-from utils.sqlcnx import *
+from web.utils.icons import *
+from web.utils.sqlcnx import *
 
 def shopping_cart_page():
     # product_name

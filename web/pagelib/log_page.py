@@ -1,7 +1,7 @@
 import streamlit as st
 import mysql.connector
 import pandas as pd
-from utils.session_control import *
+from web.utils.session_control import *
 
 
 def log_in_based_on_info(role):
