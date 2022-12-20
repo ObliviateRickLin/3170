@@ -44,7 +44,7 @@ def log_in_page():
         #st.write(len(cur.fetchall()))
     # Fetch one result
     if st.button("Log In"):
-        if st.session_state["log_check"] == False:
+        if len(cur.fetchall()) == 0:
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         else:
             st.session_state["log_check"] == True
