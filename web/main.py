@@ -34,7 +34,7 @@ if st.session_state["function"] == "log":
 
 elif st.session_state["function"] == "consumer":
     with st.sidebar:
-        st.image(path+"./images/pandas_chip_2.png")
+        st.image(path+"/images/pandas_chip_2.png")
         selected_c = om("CEND-INTERFACE", 
                         ["Introduction", 
                          "Page1",
@@ -58,7 +58,7 @@ elif st.session_state["function"] == "consumer":
 
 elif st.session_state["function"] == "staff":
     with st.sidebar:
-        st.image(path+"./images/pandas_chip_1.png")
+        st.image(path+"/images/pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
                         "Shopping Cart",
