@@ -6,13 +6,13 @@ import mysql.connector
 
 path = os.path.dirname(__file__)
 
-CIPY_PATH = "data\plant_pos.csv"
+CIPY_PATH = "data/plant_pos.csv"
 
-MACHINE_PATH = "source\data_generation\dataset\machine_type.csv"
+MACHINE_PATH = "source/data_generation/dataset/machine_type.csv"
 
-PLANT_PATH = "source\data_generation\dataset\plants.csv"
+PLANT_PATH = "source/data_generation/dataset/plants.csv"
 
-CHIP_PATH = "source\data_generation\dataset\chip_type.csv"
+CHIP_PATH = "source/data_generation/dataset/chip_type.csv"
 
 cnx = mysql.connector.connect(
 host="123.60.157.95",
@@ -56,7 +56,7 @@ def preview_page():
     # st.set_page_config(page_title="Main Demo", page_icon="📈")
     # st.sidebar.header("Main Demo")
     
-    chip_img = Image.open("images\chip_img.jpg")
+    chip_img = Image.open("images/chip_img.jpg")
     st.image(chip_img)
     
     st.title("Introduction")
@@ -78,7 +78,7 @@ def preview_page():
     
     plant_text_col.header("***Our Plants***")
     plant_text_col.markdown("***Our plants are all over the country. We are able provide you with the most efficient solution!***")
-    plant_img = Image.open("images\plant.jpg")
+    plant_img = Image.open("images/plant.jpg")
     plant_img_col.image(plant_img)
     
     # plant_info = pd.read_csv(PLANT_PATH)
@@ -105,7 +105,7 @@ def preview_page():
     # The following are information about machines, including information about machine name, chip version, etc.
     
     machine_img_col, machine_text_col = st.columns((2,1))
-    machine_img = Image.open("images\machine.jpeg")
+    machine_img = Image.open("images/machine.jpeg")
     machine_img_col.image(machine_img)
     
     machine_text_col.header("***Our Machines***")
