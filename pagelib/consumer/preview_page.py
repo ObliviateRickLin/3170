@@ -47,6 +47,7 @@ def select_machine(machine_info, m_name, m_ver):
     return machine_list
 
 def run_query(query, cnx):
+    cnx.reconnect()
     with cnx.cursor() as cur:
         cur.execute(query)
         return cur.fetchall()
@@ -193,6 +194,10 @@ def preview_page():
     chip_list = select_chip(chip_info, selected_c_type, selected_c_ver)
     st.dataframe(chip_list, use_container_width=True)
     st.write("***")
+    
+    #close the cnx
+    cnx.close()
+
     # st.write(chip_list)
 if __name__ == "__main__":
     preview_page()

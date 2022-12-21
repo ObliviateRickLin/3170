@@ -22,6 +22,7 @@ def load_data():
     return df
 
 def run_query(query, cnx):
+    cnx.reconnect()
     with cnx.cursor() as cur:
         cur.execute(query)
         return cur.fetchall()
@@ -111,5 +112,6 @@ def custormer_order_page(user_id):
         
     st.map(data.loc[data['city'].isin(city_name)])
 
+    cnx.close()
     
 #custormer_order_page(user_id=USER_ID)

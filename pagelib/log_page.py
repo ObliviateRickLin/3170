@@ -53,6 +53,7 @@ def log_in_page():
             move_to_consumer_state()
             st.success("Log in Seccessfully as staff. Please click the button again.")
             st.balloons()
+    cnx.close()
 
 def sign_up_page():
     cnx = mysql.connector.connect(
@@ -92,3 +93,4 @@ def sign_up_page():
         cnx.commit()
         st.success("Sign Up Seccessfully")
         st.snow()
+    cnx.close()
