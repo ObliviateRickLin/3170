@@ -48,10 +48,11 @@ def run_query(query):
         password="csc123456@",
         database="project")
     cnx.reconnect()
-    with cnx.cursor() as cur:
+    with cnx.cursor(buffered=True) as cur:
         cur.execute(query)
+        result = cur.fetchall()
     cnx.close()
-    return cur.fetchall()
+    return result
     
 def preview_page():
 

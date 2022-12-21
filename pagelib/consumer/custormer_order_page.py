@@ -23,8 +23,9 @@ def run_query(query):
         database="project")
     with cnx.cursor() as cur:
         cur.execute(query)
+        result = cur.fetchall()
     cnx.close()
-    return cur.fetchall()
+    return result
 
 def custormer_order_page(user_id):
     
