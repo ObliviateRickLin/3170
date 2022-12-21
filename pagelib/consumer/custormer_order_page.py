@@ -7,13 +7,6 @@ import numpy as np
 # user id for testing
 USER_ID = 100
 
-cnx = mysql.connector.connect(
-host="123.60.157.95",
-port=3306,
-user="root",
-password="csc123456@",
-database="project")
-
 CIPY_PATH = "data/plant_pos.csv"
 
 @st.cache
@@ -21,11 +14,17 @@ def load_data():
     df = pd.read_csv(CIPY_PATH)
     return df
 
-def run_query(query, cnx):
-    cnx.reconnect()
+def run_query(query):
+    cnx = mysql.connector.connect(
+        host="123.60.157.95",
+        port=3306,
+        user="root",
+        password="csc123456@",
+        database="project")
     with cnx.cursor() as cur:
         cur.execute(query)
-        return cur.fetchall()
+    cnx.close()
+    return cur.fetchall()
 
 def custormer_order_page(user_id):
     
@@ -52,7 +51,7 @@ def custormer_order_page(user_id):
         """
     )
     
-    package_info = pd.DataFrame(run_query("SELECT * FROM package", cnx), columns=['user_id', 'package_id', 'budget', 'create_time', 'deadline'])
+    package_info = pd.DataFrame(run_query("SELECT * FROM package"), columns=['user_id', 'package_id', 'budget', 'create_time', 'deadline'])
     current_user_order = package_info.loc[package_info['user_id'] == USER_ID]
     cur_order = current_user_order[['package_id', 'budget', 'create_time', 'deadline']]
     cur_package = cur_order[['package_id']]
@@ -86,8 +85,8 @@ def custormer_order_page(user_id):
     )
     
     data = load_data()
-    plant_package_info = pd.DataFrame(run_query("SELECT * FROM plant_with_package", cnx), columns=['package_id', 'plant_id'])
-    plant_info = pd.DataFrame(run_query('SELECT plant_id, plant_name, province, street_address from plant;', cnx), 
+    plant_package_info = pd.DataFrame(run_query("SELECT * FROM plant_with_package"), columns=['package_id', 'plant_id'])
+    plant_info = pd.DataFrame(run_query('SELECT plant_id, plant_name, province, street_address from plant;'), 
                               columns=['plant_id', 'plant_name', 'province', 'street_address'],)
         
     plant_list = plant_package_info.loc[plant_package_info['package_id'].isin(np.array(cur_package).squeeze())]['plant_id'].unique()
@@ -112,6 +111,5 @@ def custormer_order_page(user_id):
         
     st.map(data.loc[data['city'].isin(city_name)])
 
-    cnx.close()
     
 #custormer_order_page(user_id=USER_ID)

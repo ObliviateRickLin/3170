@@ -14,12 +14,6 @@ PLANT_PATH = "source/data_generation/dataset/plants.csv"
 
 CHIP_PATH = "source/data_generation/dataset/chip_type.csv"
 
-cnx = mysql.connector.connect(
-host="123.60.157.95",
-port=3306,
-user="root",
-password="csc123456@",
-database="project")
 
 @st.cache
 def load_data():
@@ -46,11 +40,18 @@ def select_machine(machine_info, m_name, m_ver):
             machine_list = machine_info.loc[(machine_info['machine_name'] == m_name) & (machine_info['machine_version'] == m_ver)]
     return machine_list
 
-def run_query(query, cnx):
+def run_query(query):
+    cnx = mysql.connector.connect(
+        host="123.60.157.95",
+        port=3306,
+        user="root",
+        password="csc123456@",
+        database="project")
     cnx.reconnect()
     with cnx.cursor() as cur:
         cur.execute(query)
-        return cur.fetchall()
+    cnx.close()
+    return cur.fetchall()
     
 def preview_page():
 
@@ -83,7 +84,7 @@ def preview_page():
     plant_img_col.image(plant_img)
     
     # plant_info = pd.read_csv(PLANT_PATH)
-    plant_info = pd.DataFrame(run_query('SELECT plant_name, province, street_address from plant;', cnx), 
+    plant_info = pd.DataFrame(run_query('SELECT plant_name, province, street_address from plant;'), 
                               columns=['plant_name', 'province', 'street_address'],)
     plant_list = plant_info[['plant_name', 'province', 'street_address']]
     
@@ -113,7 +114,7 @@ def preview_page():
     machine_text_col.markdown("***Customize your chipset with all the machines we provide!***")
 
     # machine_info = pd.read_csv(MACHINE_PATH)
-    machine_info = pd.DataFrame(run_query('SELECT machine_name, machine_version, price from machine_type;', cnx), 
+    machine_info = pd.DataFrame(run_query('SELECT machine_name, machine_version, price from machine_type;'), 
                                 columns=['machine_name', 'machine_version', 'price'])
     
     st.write(machine_info)
@@ -157,7 +158,7 @@ def preview_page():
     st.markdown("***")
     st.header("***Our Products***")
     # chip_info = pd.read_csv(CHIP_PATH)
-    chip_info = pd.DataFrame(run_query('SELECT chip_name, chip_version from chip_type;', cnx), 
+    chip_info = pd.DataFrame(run_query('SELECT chip_name, chip_version from chip_type;'), 
                                 columns=['chip_name', 'chip_version'])
 
     chip_name_box, select_c_name_checkbox, chip_version_box, select_c_ver_checkbox = st.columns((5,1,5,1))
@@ -195,8 +196,6 @@ def preview_page():
     st.dataframe(chip_list, use_container_width=True)
     st.write("***")
     
-    #close the cnx
-    cnx.close()
 
     # st.write(chip_list)
 if __name__ == "__main__":
