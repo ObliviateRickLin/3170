@@ -14,7 +14,7 @@ user="root",
 password="csc123456@",
 database="project")
 
-CIPY_PATH = "web\data\plant_pos.csv"
+CIPY_PATH = "data/plant_pos.csv"
 
 @st.cache
 def load_data():
