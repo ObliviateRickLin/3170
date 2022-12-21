@@ -10,7 +10,7 @@ from utils.bgsetting import *
 
 #current path
 path = os.path.dirname(__file__)
-st.image("images/chip_img.jpg")
+#st.image("images/chip_img.jpg")
 #initialize session state
 if "function" not in st.session_state:
     st.session_state["function"] = "log" # RANGE in {log, staff, consumer}
@@ -34,7 +34,7 @@ if st.session_state["function"] == "log":
 
 elif st.session_state["function"] == "consumer":
     with st.sidebar:
-        st.image("images\pandas_chip_2.png")
+        st.image("images/pandas_chip_2.png")
         selected_c = om("CEND-INTERFACE", 
                         ["Introduction", 
                          "Shopping Cart",
@@ -58,7 +58,7 @@ elif st.session_state["function"] == "consumer":
 
 elif st.session_state["function"] == "staff":
     with st.sidebar:
-        st.image("images\pandas_chip_1.png")
+        st.image("images/pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
                         "Page1",
