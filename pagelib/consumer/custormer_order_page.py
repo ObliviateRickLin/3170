@@ -89,9 +89,9 @@ def custormer_order_page(user_id):
     plant_package_info = pd.DataFrame(run_query("SELECT * FROM plant_with_package"), columns=['package_id', 'plant_id'])
     plant_info = pd.DataFrame(run_query('SELECT plant_id, plant_name, province, street_address from plant;'), 
                               columns=['plant_id', 'plant_name', 'province', 'street_address'],)
-        
-    plant_list = plant_package_info.loc[plant_package_info['package_id'].isin(np.array(cur_package).squeeze())]['plant_id'].unique()
     
+
+    plant_list = plant_package_info.loc[plant_package_info['package_id'].isin(cur_package.values[0].tolist())]['plant_id'].unique()
         
     # st.dataframe(plant_package_info)
     
