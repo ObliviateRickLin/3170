@@ -22,10 +22,10 @@ def shopping_cart_page():
             st.write("___________________________________")
     total = chip_type["COST"].sum()
     c1, c2 = st.columns((1,2))
-    with c1: st.subheader("TOTAL COST OF YOUR PACKAGE %s"%total)
-    with c2: st.time_input("Choose a DDL of your package")
+    with c1: st.metric(label="TOTAL COST", value = total) 
+    with c2: st.date_input("Choose a DDL of your package")
     with st.expander("Check your shopping cart information"):
-        st.dataframe(chip_type.style.apply(color_zero_red))
+        st.dataframe(chip_type.style.applymap(color_zero_red))
     #st.write(product_quantities)
     return 
 
