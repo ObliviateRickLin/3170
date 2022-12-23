@@ -20,7 +20,8 @@ if "role" not in st.session_state:
     st.session_state["role"] = "staff"
 #three functions
 if st.session_state["function"] == "log":
-    selected = om("CHIPANDA COOPERATION", 
+    st.image("images/logo.png")
+    selected = om("Chipanda Semiconductor Manufacturing Company Limited", 
                     ["LOG IN", 
                     'SIGN UP'], 
                 menu_icon =  "chip_fill",
