@@ -11,7 +11,7 @@ def shopping_cart_page():
     st.write("___________________________________")
     for _, row in chip_type.iterrows():
         with st.container():
-            c0, c1, c2, c3, c4 = st.columns((1,5,1.3,2,1.8))
+            c0, c1, c2, c3, c4 = st.columns((1,5,1.4,2,1.8))
             with c0: display_icon(cpu)
             with c1: st.subheader(row["CHIP_NAME"]);st.caption("Version: %s"%row["CHIP_VERSION"])
             with c2: st.subheader("%s$"%row["PRICE"])
