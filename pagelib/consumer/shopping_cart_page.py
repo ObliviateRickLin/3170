@@ -1,10 +1,16 @@
 import streamlit as st
 
+from datetime import datetime, timedelta
 from utils.icons import *
 from utils.sqlcnx import *
 from utils.dfstyle import *
 
+
 def shopping_cart_page():
+    # Calculate the minimum and maximum date range
+    today = datetime.today()
+    min_date = today + timedelta(days=10)
+    max_date = today + timedelta(days=20)
     # product_name
     chip_type = get_chip_type()
     # title
@@ -22,8 +28,14 @@ def shopping_cart_page():
             st.write("___________________________________")
     total = chip_type["COST"].sum()
     c1, c2 = st.columns((1,2))
-    with c1: st.metric(label="TOTAL COST", value = total) 
-    with c2: st.date_input("Choose a DDL of your package")
+    with c1: 
+        st.metric(label="TOTAL COST", 
+                value = total, 
+                min_date = min_date, 
+                max_date = max_date, 
+                help="We will try to accomplish the package within DDL, which is about 10 to 20 after to") 
+    with c2: 
+        st.date_input("Choose a DDL of your package")
     with st.expander("Check your shopping cart information"):
         st.dataframe(chip_type.style.applymap(color_zero))
     #st.write(product_quantities)
