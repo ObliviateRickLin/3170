@@ -15,8 +15,7 @@ def get_chip_type():
             FROM chip_type;
             """)
     chip_type = pd.DataFrame(cur.fetchall())
-    chip_type.columns = ["CHIP NAME", "CHIP VERSION"]
-    chip_type["PRICE"] = 0
+    chip_type.columns = ["CHIP_NAME", "CHIP_VERSION", "PRICE"]
     chip_type["NUMBER"] = 0
     chip_type["COST"] = 0
     cnx.close()     
@@ -28,13 +27,3 @@ def get_chip_type():
 if __name__ == '__main__':
     print(get_chip_type())
 
-'''
-# Get a cursor
-cur = cnx.cursor()
-# Execute a query
-cur.execute("""
-            SELECT *  
-            FROM user;
-            """)
-print(pd.DataFrame(cur.fetchall()))
-'''
