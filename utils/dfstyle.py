@@ -1,6 +1,6 @@
 import pandas as pd
 
-def color_zero_green(val):
+def color_zero(val):
     """
     Takes a scalar and returns a string with
     the css property `'color: red'` for zero

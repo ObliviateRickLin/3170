@@ -25,7 +25,7 @@ def shopping_cart_page():
     with c1: st.metric(label="TOTAL COST", value = total) 
     with c2: st.date_input("Choose a DDL of your package")
     with st.expander("Check your shopping cart information"):
-        st.dataframe(chip_type.style.applymap(color_zero_red))
+        st.dataframe(chip_type.style.applymap(color_zero))
     #st.write(product_quantities)
     return 
 
