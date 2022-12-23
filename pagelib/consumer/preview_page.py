@@ -118,6 +118,7 @@ def preview_page():
     machine_info = pd.DataFrame(run_query('SELECT machine_name, machine_version, price from machine_type;'), 
                                 columns=['machine_name', 'machine_version', 'price'])
     
+    st.dataframe(machine_info, use_container_width=True)
     
     machine_name_box, select_m_name_checkbox, machine_version_box, select_m_ver_checkbox = st.columns((5,1,5,1))
     
