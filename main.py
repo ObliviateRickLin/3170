@@ -8,6 +8,9 @@ from pagelib.consumer.custormer_order_page import *
 from utils.session_control import *
 from utils.bgsetting import *
 
+#set the page title
+st.set_page_config(page_title="Chipanda")
+
 #current path
 path = os.path.dirname(__file__)
 #st.image("images/chip_img.jpg")
