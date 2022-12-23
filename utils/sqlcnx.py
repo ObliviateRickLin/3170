@@ -1,7 +1,6 @@
 import mysql.connector
 import pandas as pd
 
-
 def run_query(query):
     cnx = mysql.connector.connect(
         host="123.60.157.95",
@@ -28,8 +27,6 @@ def get_chip_type():
     chip_type["COST"] = 0
    
     return chip_type
-
-
 
 
 if __name__ == '__main__':
