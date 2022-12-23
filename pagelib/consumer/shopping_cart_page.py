@@ -36,7 +36,7 @@ def shopping_cart_page():
                 value = dft_date,
                 min_value = min_date, 
                 max_value = max_date, 
-                help="We will try to accomplish the package within DDL, which is about 10 to 20 after to")
+                help="DDL should be about 10 to 20 days after today.")
     with st.expander("Check your shopping cart information"):
         st.dataframe(chip_type.style.applymap(color_zero))
     #st.write(product_quantities)
