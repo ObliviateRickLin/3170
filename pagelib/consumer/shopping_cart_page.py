@@ -11,6 +11,7 @@ def shopping_cart_page():
     today = datetime.today()
     min_date = today + timedelta(days=10)
     max_date = today + timedelta(days=20)
+    dft_date = today + timedelta(days=15)
     # product_name
     chip_type = get_chip_type()
     # title
@@ -32,6 +33,7 @@ def shopping_cart_page():
         st.metric(label="TOTAL COST", value = total) 
     with c2: 
         st.date_input("Choose a DDL of your package", 
+                value = dft_date,
                 min_value = min_date, 
                 max_value = max_date, 
                 help="We will try to accomplish the package within DDL, which is about 10 to 20 after to")
