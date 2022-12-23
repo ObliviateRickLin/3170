@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import mysql.connector
+import re
 
 path = os.path.dirname(__file__)
 
@@ -14,6 +15,11 @@ PLANT_PATH = "source/data_generation/dataset/plants.csv"
 
 CHIP_PATH = "source/data_generation/dataset/chip_type.csv"
 
+PIN_COUNT = {
+    "ST" : [20, 28, 32],
+    "AD" : [20, 32, 36],
+    "EP" : [32, 26, 48],
+}
 
 @st.cache
 def load_data():
@@ -118,7 +124,7 @@ def preview_page():
     machine_info = pd.DataFrame(run_query('SELECT machine_name, machine_version, price from machine_type;'), 
                                 columns=['machine_name', 'machine_version', 'price'])
     
-    st.dataframe(machine_info, use_container_width=True)
+    # st.dataframe(machine_info, use_container_width=True)
     
     machine_name_box, select_m_name_checkbox, machine_version_box, select_m_ver_checkbox = st.columns((5,1,5,1))
     
@@ -161,7 +167,14 @@ def preview_page():
     # chip_info = pd.read_csv(CHIP_PATH)
     chip_info = pd.DataFrame(run_query('SELECT chip_name, chip_version, price from chip_type;'), 
                                 columns=['chip_name', 'chip_version', 'price'])
-
+    
+    chip_names = chip_info['chip_name']
+    chip_vers = chip_info['chip_version']
+    
+    leading_letters = [chip_name.lstrip()[:2] for chip_name in chip_names]
+    pin_counts = [PIN_COUNT[leading_letters[i]][int(chip_vers[i])-1] for i in range(len(leading_letters))]
+    chip_info['pin_count'] = pin_counts
+    
     chip_name_box, select_c_name_checkbox, chip_version_box, select_c_ver_checkbox = st.columns((5,1,5,1))
     
     use_c_name_col = select_c_name_checkbox.checkbox("   ")
