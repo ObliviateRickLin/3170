@@ -118,7 +118,6 @@ def preview_page():
     machine_info = pd.DataFrame(run_query('SELECT machine_name, machine_version, price from machine_type;'), 
                                 columns=['machine_name', 'machine_version', 'price'])
     
-    st.write(machine_info)
     
     machine_name_box, select_m_name_checkbox, machine_version_box, select_m_ver_checkbox = st.columns((5,1,5,1))
     
@@ -159,8 +158,8 @@ def preview_page():
     st.markdown("***")
     st.header("***Our Products***")
     # chip_info = pd.read_csv(CHIP_PATH)
-    chip_info = pd.DataFrame(run_query('SELECT chip_name, chip_version from chip_type;'), 
-                                columns=['chip_name', 'chip_version'])
+    chip_info = pd.DataFrame(run_query('SELECT chip_name, chip_version, price from chip_type;'), 
+                                columns=['chip_name', 'chip_version', 'price'])
 
     chip_name_box, select_c_name_checkbox, chip_version_box, select_c_ver_checkbox = st.columns((5,1,5,1))
     

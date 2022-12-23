@@ -27,6 +27,9 @@ def run_query(query):
     cnx.close()
     return result
 
+def delete_package(package_id):
+    st.write("delete package {}".format(package_id))
+
 def custormer_order_page(user_id):
     
     ## CSS
@@ -44,16 +47,19 @@ def custormer_order_page(user_id):
     
     st.title("Current Order")
     
+    name = run_query("SELECT FIRST_NAME, LAST_NAME FROM user WHERE USER_ID = {}".format(user_id))
+    first_name, last_name = name[0][0], name[0][1]
     # Current Orders
     st.markdown("***")
     st.markdown(
         """
         ## ***Current Orders***
-        """
+        Hi, ***{} {}***. Here are your current orders.
+        """.format(first_name, last_name)
     )
     
     package_info = pd.DataFrame(run_query("SELECT * FROM package"), columns=['user_id', 'package_id', 'budget', 'create_time', 'deadline'])
-    current_user_order = package_info.loc[package_info['user_id'] == USER_ID]
+    current_user_order = package_info.loc[package_info['user_id'] == user_id]
     cur_order = current_user_order[['package_id', 'budget', 'create_time', 'deadline']]
     cur_package = cur_order[['package_id']]
     st.dataframe(cur_order, use_container_width=True)
@@ -62,6 +68,7 @@ def custormer_order_page(user_id):
     st.markdown(
         """
         ## ***Cancel Orders***
+        
         """
     )
     
@@ -75,20 +82,21 @@ def custormer_order_page(user_id):
     cancel = cancel_button.button('cancel')
     
     if (cancel):
-        st.write('cancel package')
+        delete_package(selected_pacakge)
     
     
     # Current working Plants
     st.markdown(
         """
         ## ***Current Working Plants***
+        The following are plants that currently working for you.
         """
     )
     
     data = load_data()
     plant_package_info = pd.DataFrame(run_query("SELECT * FROM plant_with_package"), columns=['package_id', 'plant_id'])
-    plant_info = pd.DataFrame(run_query('SELECT plant_id, plant_name, province, street_address from plant;'), 
-                              columns=['plant_id', 'plant_name', 'province', 'street_address'],)
+    plant_info = pd.DataFrame(run_query('SELECT plant_id, plant_name, province, street_address, phone_number from plant;'), 
+                              columns=['plant_id', 'plant_name', 'province', 'street_address', 'phone_number'],)
     
 
     plant_list = plant_package_info.loc[plant_package_info['package_id'].isin(cur_package.values[0].tolist())]['plant_id'].unique()
