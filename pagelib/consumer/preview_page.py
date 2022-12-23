@@ -21,6 +21,12 @@ PIN_COUNT = {
     "EP" : [32, 26, 48],
 }
 
+TEMP_RANGE = {
+    "ST" : "-40~85°C",
+    "AD" : "-40~85°C",
+    "EP" : "-40~105°C",
+}
+
 @st.cache
 def load_data():
     df = pd.read_csv(CIPY_PATH)
@@ -170,10 +176,13 @@ def preview_page():
     
     chip_names = chip_info['chip_name']
     chip_vers = chip_info['chip_version']
-    
+    # add pincount information
     leading_letters = [chip_name.lstrip()[:2] for chip_name in chip_names]
     pin_counts = [PIN_COUNT[leading_letters[i]][int(chip_vers[i])-1] for i in range(len(leading_letters))]
     chip_info['pin_count'] = pin_counts
+    # add temperature information
+    temperature_ranges = [TEMP_RANGE[leading_letter] for leading_letter in leading_letters]
+    chip_info['temperature_range'] = temperature_ranges
     
     chip_name_box, select_c_name_checkbox, chip_version_box, select_c_ver_checkbox = st.columns((5,1,5,1))
     
