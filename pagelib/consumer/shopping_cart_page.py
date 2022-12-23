@@ -2,6 +2,7 @@ import streamlit as st
 
 from utils.icons import *
 from utils.sqlcnx import *
+from utils.dfstyle import *
 
 def shopping_cart_page():
     # product_name
@@ -20,9 +21,11 @@ def shopping_cart_page():
             chip_type["COST"] = chip_type["NUMBER"] * chip_type["PRICE"]
             st.write("___________________________________")
     total = chip_type["COST"].sum()
-    st.subheader(total)
+    c1, c2 = st.columns((1,2))
+    with c1: st.subheader("TOTAL COST OF YOUR PACKAGE %s"%total)
+    with c2: st.time_input("Choose a DDL of your package")
     with st.expander("Check your shopping cart information"):
-        st.table(chip_type)
+        st.dataframe(chip_type.style.apply(color_zero_red))
     #st.write(product_quantities)
     return 
 
