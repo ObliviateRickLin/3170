@@ -22,7 +22,7 @@ if "role" not in st.session_state:
 if st.session_state["function"] == "log":
     c1, c2 = st.columns((1,3))
     with c1: st.image("images/logo.png")
-    with c2: st.title("CHIPANDAS SMC")
+    with c2: st.title("CHIPANDA SMC")
     selected = om("Chipanda Semiconductor Manufacturing Company Limited", 
                     ["LOG IN", 
                     'SIGN UP'], 
