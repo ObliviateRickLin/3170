@@ -3,10 +3,9 @@ import pandas as pd
 def color_zero_red(val):
     """
     Takes a scalar and returns a string with
-    the css property `'color: red'` for negative
-    strings, black otherwise.
+    the css property `'color: red'` for zero
+    strings, white otherwise.
     """
-    if val == 0:
-        color = 'red'
+    color = 'red' if val == 0 else 'white'
     return 'color: %s' % color
 
