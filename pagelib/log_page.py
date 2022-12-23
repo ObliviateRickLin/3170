@@ -16,11 +16,11 @@ def log_in_based_on_info(role):
     
 def log_in_page():
     cnx = mysql.connector.connect(
-    host="123.60.157.95",
-    port=3306,
-    user="root",
-    password="csc123456@",
-    database="project") 
+        host="123.60.157.95",
+        port=3306,
+        user="root",
+        password="csc123456@",
+        database="project") 
     first_name = st.text_input("First name",placeholder="Yangsheng")
     last_name = st.text_input("Last name",placeholder="Xu")
     password = st.text_input("Password",placeholder="1999GJ5")

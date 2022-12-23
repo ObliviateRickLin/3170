@@ -26,3 +26,6 @@ def shopping_cart_page():
 
     #st.write(product_quantities)
     return 
+
+if __name__ == "__main__":
+    shopping_cart_page()
