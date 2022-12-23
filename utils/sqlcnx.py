@@ -1,6 +1,21 @@
 import mysql.connector
 import pandas as pd
 
+
+def run_query(query):
+    cnx = mysql.connector.connect(
+        host="123.60.157.95",
+        port=3306,
+        user="root",
+        password="csc123456@",
+        database="project")
+    cnx.reconnect()
+    with cnx.cursor(buffered=True) as cur:
+        cur.execute(query)
+        result = cur.fetchall()
+    cnx.close()
+    return result
+    
 # Fetch one result
 def get_chip_type():
     cnx = mysql.connector.connect(

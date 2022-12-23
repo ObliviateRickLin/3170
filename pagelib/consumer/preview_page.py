@@ -5,6 +5,8 @@ from PIL import Image
 import mysql.connector
 import re
 
+from utils.sqlcnx import *
+
 path = os.path.dirname(__file__)
 
 CIPY_PATH = "data/plant_pos.csv"
@@ -52,19 +54,7 @@ def select_machine(machine_info, m_name, m_ver):
             machine_list = machine_info.loc[(machine_info['machine_name'] == m_name) & (machine_info['machine_version'] == m_ver)]
     return machine_list
 
-def run_query(query):
-    cnx = mysql.connector.connect(
-        host="123.60.157.95",
-        port=3306,
-        user="root",
-        password="csc123456@",
-        database="project")
-    cnx.reconnect()
-    with cnx.cursor(buffered=True) as cur:
-        cur.execute(query)
-        result = cur.fetchall()
-    cnx.close()
-    return result
+
     
 def preview_page():
 

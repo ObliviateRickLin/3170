@@ -4,6 +4,7 @@ import pandas as pd
 import mysql.connector
 import numpy as np
 
+from utils.sqlcnx import *
 # user id for testing
 USER_ID = 100
 
@@ -13,19 +14,6 @@ CIPY_PATH = "data/plant_pos.csv"
 def load_data():
     df = pd.read_csv(CIPY_PATH)
     return df
-
-def run_query(query):
-    cnx = mysql.connector.connect(
-        host="123.60.157.95",
-        port=3306,
-        user="root",
-        password="csc123456@",
-        database="project")
-    with cnx.cursor() as cur:
-        cur.execute(query)
-        result = cur.fetchall()
-    cnx.close()
-    return result
 
 def delete_package(package_id):
     st.write("delete package {}".format(package_id))
