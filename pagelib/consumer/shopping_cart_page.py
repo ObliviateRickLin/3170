@@ -29,13 +29,12 @@ def shopping_cart_page():
     total = chip_type["COST"].sum()
     c1, c2 = st.columns((1,2))
     with c1: 
-        st.metric(label="TOTAL COST", 
-                value = total, 
+        st.metric(label="TOTAL COST", value = total) 
+    with c2: 
+        st.date_input("Choose a DDL of your package", 
                 min_date = min_date, 
                 max_date = max_date, 
-                help="We will try to accomplish the package within DDL, which is about 10 to 20 after to") 
-    with c2: 
-        st.date_input("Choose a DDL of your package")
+                help="We will try to accomplish the package within DDL, which is about 10 to 20 after to")
     with st.expander("Check your shopping cart information"):
         st.dataframe(chip_type.style.applymap(color_zero))
     #st.write(product_quantities)
