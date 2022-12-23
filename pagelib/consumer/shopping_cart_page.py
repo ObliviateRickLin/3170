@@ -19,7 +19,7 @@ def shopping_cart_page():
             with c4: row["NUMBER"] = st.number_input(label = "Number", value=0, step=1, min_value=0, key = ("version",row["CHIP_NAME"],row["CHIP_VERSION"]))
             row["COST"] = row["NUMBER"] * row["PRICE"]
             st.write("___________________________________")
-    total = chip_type["cost"].sum()
+    total = chip_type["COST"].sum()
     st.subheader(total)
     with st.expander("Check your shopping cart information"):
         st.table(chip_type)
