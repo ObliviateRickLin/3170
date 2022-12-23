@@ -51,7 +51,7 @@ elif st.session_state["function"] == "consumer":
         st.sidebar.info(
                 """
             Welcome to chipandas! Contact us with +86 17767361813.  
-            Copyright © 2022 CHIPANDAS Corporation
+            Copyright © 2022 CHIPANDAS Campany Limited
                 """
         )
     if selected_c == "Introduction":
@@ -75,7 +75,7 @@ elif st.session_state["function"] == "staff":
     st.sidebar.info(
             """
         Welcome to chipandas! Contact us with +86 17767361813.  
-        Copyright © 2022 CHIPANDAS Corporation
+        Copyright © 2022 CHIPANDAS Campany Limited
             """
     )
     if selected_b == "Introduction":
