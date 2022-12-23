@@ -32,8 +32,8 @@ def shopping_cart_page():
         st.metric(label="TOTAL COST", value = total) 
     with c2: 
         st.date_input("Choose a DDL of your package", 
-                min_date = min_date, 
-                max_date = max_date, 
+                min_value = min_date, 
+                max_value = max_date, 
                 help="We will try to accomplish the package within DDL, which is about 10 to 20 after to")
     with st.expander("Check your shopping cart information"):
         st.dataframe(chip_type.style.applymap(color_zero))
