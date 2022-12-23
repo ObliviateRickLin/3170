@@ -16,7 +16,7 @@ def shopping_cart_page():
             with c1: st.subheader(row["CHIP_NAME"]);st.caption("Version: %s"%row["CHIP_VERSION"])
             with c2: st.subheader("%s$"%row["PRICE"])
             with c3: st.selectbox("Selectable Plants", options=("Plant A", "Plant B","Platn C"), key = ("plant",row["CHIP_NAME"],row["CHIP_VERSION"]))
-            with c4: row["NUMBER"] = st.number_input(label = "Number", value=0, step=1, min_value=0, key = ("version",row["CHIP_NAME"],row["CHIP_VERSION"]))
+            row["NUMBER"] = c4.number_input(label = "Number", value=0, step=1, min_value=0, key = ("version",row["CHIP_NAME"],row["CHIP_VERSION"]))
             row["COST"] = row["NUMBER"] * row["PRICE"]
             st.write("___________________________________")
     total = chip_type["COST"].sum()
