@@ -43,23 +43,23 @@ def log_in_page():
             role = result
 
     # Fetch one result
-    if st.form_submit_button("Log In"):
-        if role == None:
-            st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
-        elif role == "staff":
-            move_to_staff_state()
-            if "ID" not in st.session_state: 
-                st.session_state["ID"] = 0
-            st.session_state["ID"] = ID
-            st.success("Log in Seccessfully as staff. Please click the button again.")
-            st.balloons()
-        elif role == "consumer":
-            move_to_consumer_state()
-            if "ID" not in st.session_state: 
-                st.session_state["ID"] = 0
-            st.session_state["ID"] = ID
-            st.success("Log in Seccessfully as consumer. Please click the button again.")
-            st.balloons()
+        if st.form_submit_button("Log In"):
+            if role == None:
+                st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
+            elif role == "staff":
+                move_to_staff_state()
+                if "ID" not in st.session_state: 
+                    st.session_state["ID"] = 0
+                st.session_state["ID"] = ID
+                st.success("Log in Seccessfully as staff. Please click the button again.")
+                st.balloons()
+            elif role == "consumer":
+                move_to_consumer_state()
+                if "ID" not in st.session_state: 
+                    st.session_state["ID"] = 0
+                st.session_state["ID"] = ID
+                st.success("Log in Seccessfully as consumer. Please click the button again.")
+                st.balloons()
     cnx.close()
 
 def sign_up_page():
