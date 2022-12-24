@@ -5,6 +5,8 @@ from pagelib.log_page import *
 from pagelib.consumer.shopping_cart_page import *
 from pagelib.consumer.preview_page import *
 from pagelib.consumer.custormer_order_page import *
+from pagelib.staff.plant_management import *
+from pagelib.staff.plant_performance import *
 from utils.session_control import *
 from utils.bgsetting import *
 
@@ -23,7 +25,7 @@ if "role" not in st.session_state:
     st.session_state["role"] = "staff"
 if "ID" not in st.session_state: 
     st.session_state["ID"] = 0
-    
+
 #three functions
 if st.session_state["function"] == "log":
     c1, c2 = st.columns((1,3))
@@ -70,8 +72,8 @@ elif st.session_state["function"] == "staff":
         st.image("images/pandas_chip_1.png")
         selected_b = om("BEND-INTERFACE", 
                         ["Introduction", 
-                        "Page1",
-                        "Page2"], 
+                        "Plant performance",
+                        "Plant Management SYS"], 
                     menu_icon =  "None",
                     icons=['house', 'ui-checks','columns','text-indent-right','ui-radios-grid','heptagon-half','eye-fill'], 
                     default_index=0)
@@ -83,4 +85,8 @@ elif st.session_state["function"] == "staff":
     )
     if selected_b == "Introduction":
         preview_page()
+    elif selected_b == "Plant performance":
+        plant_performance()
+    elif selected_b == "Plant Management SYS":
+        plant_management_sys()
     st.button("Log out", on_click=move_to_log_state)
