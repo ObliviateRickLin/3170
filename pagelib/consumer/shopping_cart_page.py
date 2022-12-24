@@ -62,7 +62,7 @@ def shopping_cart_page():
                 password="csc123456@",
                 database="project") 
         cur = cnx.cursor()
-        query1 = """INSERT INTO package (USER_ID, PACKAGE_ID, BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s, %s);"""
+        query1 = """INSERT INTO package (USER_ID, PACKAGE_ID, BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s, %s)"""
         cur.execute(query1, package_info)
         cnx.commit()
         cnx.close()
