@@ -51,7 +51,7 @@ def shopping_cart_page():
             ddl = datetime.combine(ddl, datetime.now().time())
             package_info = (str(st.session_state["ID"]), 3, str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
             st.write(type(st.session_state["ID"]))
-            st.write(type(total))
+            st.write(str(total))
             st.write(type(today.strftime("%Y-%m-%d %H:%M:%S")))
             st.write(type(ddl.strftime("%Y-%m-%d %H:%M:%S")))
     if st.button("SUBMIT YOUR PACKAGE"):
