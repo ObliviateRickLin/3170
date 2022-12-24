@@ -74,7 +74,7 @@ def select_plants_with_chip():
     plants_ = run_query("SELECT PLANT_NAME FROM plant")
     plants = [plant_[0] for plant_ in plants_]
     chip_type = pd.DataFrame(run_query("SELECT CHIP_NAME, CHIP_VERSION FROM chip_type"))
-    chip_type.columns =["chip_name", "chip_version"]
+    chip_type.columns =["CHIP_NAME", "CHIP_VERSION"]
     chip_type["Selected_plants"] = 0
     chip_type["Selected_plants"] = chip_type.apply(lambda row: selectable_plants(plants, row["chip_name"], row['chip_version']), axis=1)
     return chip_type
