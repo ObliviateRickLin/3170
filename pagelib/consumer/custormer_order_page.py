@@ -6,12 +6,8 @@ import numpy as np
 
 from utils.sqlcnx import *
 # user id for testing
-USER_ID = st.session_state["ID"]
-
 CIPY_PATH = "data/plant_pos.csv"
 
-if "ID" not in st.session_state: 
-    st.session_state["ID"] = 0
 @st.cache
 def load_data():
     df = pd.read_csv(CIPY_PATH)
@@ -33,8 +29,8 @@ def cancel_order(query):
     cnx.commit()
     cnx.close()
 
-def custormer_order_page(user_id=USER_ID):
-    
+def custormer_order_page():
+    user_id = st.session_state["ID"] 
     ## CSS
     m = st.markdown("""
     <style>
