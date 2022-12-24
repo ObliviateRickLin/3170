@@ -66,17 +66,9 @@ def shopping_cart_page():
         query1 = """INSERT INTO package (USER_ID,  BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s)"""
         cur.execute(query1, package_info)
         cnx.commit()
-        cnx.close()
-        cnx = mysql.connector.connect(
-                host="123.60.157.95",
-                port=3306,
-                user="root",
-                password="csc123456@",
-                database="project") 
-        cur = cnx.cursor()
-        query2 = """SELECT PACKAGE_ID FROM package where USER_ID = %s , BUDGET = %s, CREATE_TIME = %s, DEADLINE = %s"""
-        cur.execute(query2, package_info)
-        package_id = cur.fetchone()
+        cur2 = cnx.cursor()
+        cur2.execute("SELECT LAST_INSERT_ID()")
+        package_id, = cur2.fetchone()
         cnx.close()
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
