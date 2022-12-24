@@ -68,8 +68,6 @@ def selectable_plants(plants, arg1, arg2, enough=True):
                 break
         if feasible_plant:
             plant.append(id)
-        if len(op_name_can_process) != 0:
-            break
     return plant
 
 def select_plants_with_chip():
