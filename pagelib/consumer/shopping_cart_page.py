@@ -21,7 +21,7 @@ def shopping_cart_page():
         with st.spinner('Wait for it. We are checking avaliable plants'):
             st.session_state["chip"] = select_plants_with_chip()
     chip_type = get_chip_type()
-    chip_type = chip_type.merge(st.session_state["chip"])
+    chip_type = chip_type.merge(st.session_state["chip"], on=["CHIP_NAME","CHIP_VERSION"])
     for index, row in chip_type.iterrows():
         with st.container():
             c0, c1, c2, c3, c4 = st.columns((1,5,1.4,2,1.8))
