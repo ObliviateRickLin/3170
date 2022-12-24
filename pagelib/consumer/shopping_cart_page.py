@@ -29,9 +29,6 @@ def shopping_cart_page():
             with c0: display_icon(cpu)
             with c1: st.subheader(row["CHIP_NAME"]);st.caption("Version: %s"%row["CHIP_VERSION"])
             with c2: st.subheader("%s$"%row["PRICE"])
-            st.write(chip_type)
-            st.write(row["PLANTS"])
-            st.write(type(row["PLANTS"]))
             with c3: chip_type.loc[index,"PLANTS"] = st.selectbox("Selected_plants", options=(row["PLANTS"]), key = ("plant",row["CHIP_NAME"],row["CHIP_VERSION"]))
             chip_type.loc[index,"NUMBER"] = c4.number_input(label = "Number", value=0, step=1, min_value=0, key = ("version",row["CHIP_NAME"],row["CHIP_VERSION"]))
             chip_type["COST"] = chip_type["NUMBER"] * chip_type["PRICE"]
