@@ -47,11 +47,11 @@ def log_in_page():
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         elif role == "staff":
             move_to_staff_state()
-            st.success("Log in Seccessfully as consumer. Please click the button again.")
+            st.success("Log in Seccessfully as staff. Please click the button again.")
             st.balloons()
         elif role == "consumer":
             move_to_consumer_state()
-            st.success("Log in Seccessfully as staff. Please click the button again.")
+            st.success("Log in Seccessfully as consumer. Please click the button again.")
             st.balloons()
     cnx.close()
 
