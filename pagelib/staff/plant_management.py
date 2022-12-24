@@ -19,7 +19,11 @@ def plant_management_sys():
                 FROM plant 
                 WHERE  boss_id = %i; 
                 """%user_id)
-    plantID, plantName = cur1.fetchone()
+    try:
+        plantID, plantName = cur1.fetchone()
+    except:
+        plantID, plantName = "1","Xi'an-1"
+    cnx1.close()
     st.title("Welcome to Plant %s" %plantName)
     st.header("Please manage and confirm the existing chip orders.")
     tab1, tab2 = st.tabs(["Manage Chip Order", "Remaining Orders"])
@@ -69,7 +73,8 @@ def plant_management_sys():
                             SET state.state_name = 'Processing'
                             WHERE package_id in (%s)
                             """%chip)
-                
+                cnx3.commit()
+                cnx3.close()
                 st.text("Successful Management!\nPlease Reflash This Page")
         
     with tab2:
@@ -89,5 +94,5 @@ def plant_management_sys():
         df2 = pd.DataFrame(
             cur4.fetchall(),
             columns=["Chip Name", "State"])
-
+        cnx4.close()
         st.table(df2)
