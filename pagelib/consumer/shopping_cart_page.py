@@ -40,13 +40,29 @@ def shopping_cart_page():
             with c1: 
                 st.metric(label="TOTAL COST", value = total) 
             with c2: 
-                st.date_input("Choose a DDL of your package", 
+                ddl = st.date_input("Choose a DDL of your package", 
                         value = dft_date,
                         min_value = min_date, 
                         max_value = max_date, 
                         help="DDL should be about 10 to 20 days after today.")
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
+            if st.button("SUBMIT"):
+                cnx = mysql.connector.connect(
+                        host="123.60.157.95",
+                        port=3306,
+                        user="root",
+                        password="csc123456@",
+                        database="project") 
+                cur = cnx.cursor()
+                query1 = """
+                INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
+                VALUES (%s, %s, %s, %s)
+                """
+                cur.execute(query1, (st.session_state["ID"], total, today, ddl))
+                cnx.close()
+                st.experimental_rerun()
+
     #st.write(product_quantities)
     return 
 

@@ -29,7 +29,7 @@ def log_in_page():
     cur = cnx.cursor()
     # Execute a query
     cur.execute("""
-                SELECT ROLE  
+                SELECT ROLE, USER_ID  
                 FROM user
                 WHERE (FIRST_NAME = %s)
                 AND (LAST_NAME = %s)
@@ -37,7 +37,7 @@ def log_in_page():
                 """, (first_name,last_name,password))
     result = cur.fetchone()
     if result:
-        role, = result
+        role, ID= result
     elif result == None:
         role = result
 
@@ -47,10 +47,12 @@ def log_in_page():
             st.warning("INVALID INFORMATION! RECHECK YOUR INPUT!")
         elif role == "staff":
             move_to_staff_state()
+            if "ID" not in st.session_state: st.session_state["ID"] = ID
             st.success("Log in Seccessfully as staff. Please click the button again.")
             st.balloons()
         elif role == "consumer":
             move_to_consumer_state()
+            if "ID" not in st.session_state: st.session_state["ID"] = ID
             st.success("Log in Seccessfully as consumer. Please click the button again.")
             st.balloons()
     cnx.close()
@@ -86,7 +88,7 @@ def sign_up_page():
 
     if st.button("Sign Up"):
         query = """
-        INSERT INTO user_ (FIRST_NAME, LAST_NAME, PHONE_NUMBER, COUNTRY_NAME, PROVINCE, ROLE, STREET_ADDRESS, PASSWORD)
+        INSERT INTO user (FIRST_NAME, LAST_NAME, PHONE_NUMBER, COUNTRY_NAME, PROVINCE, ROLE, STREET_ADDRESS, PASSWORD)
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         """
         cur.execute(query, (first_name, last_name, phone_number, country_name, province, role, street_address, password))
