@@ -89,8 +89,8 @@ def plant_management_sys():
         cur4.execute("""
                     SELECT c.chip_name, s.state_name
                     FROM chip AS c NATURAL JOIN state AS s
-                    WHERE c.plant_id = %i and s.state_name = 'Processing'
-                    """%plantID)
+                    WHERE c.plant_id = %s and s.state_name = 'Processing'
+                    """,(plantID,))
         df2 = pd.DataFrame(
             cur4.fetchall(),
             columns=["Chip Name", "State"])
