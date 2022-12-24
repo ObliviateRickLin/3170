@@ -88,7 +88,6 @@ def shopping_cart_page():
             num = row["NUMBER"]
             for _ in range(num):
                 chip_in_package.append((row["CHIP_NAME"],row["CHIP_VERSION"],row["PRICE"],package_id, plant_info[row["PLANTS"]]))
-        st.write(chip_in_package)
         cur.executemany(query3, chip_in_package)
         cnx.commit()
         cnx.close()
