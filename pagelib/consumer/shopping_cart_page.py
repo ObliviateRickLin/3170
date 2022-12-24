@@ -52,6 +52,7 @@ def shopping_cart_page():
             package_info = (st.session_state["ID"], str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
     st.write(package_info)
     if st.button("SUBMIT YOUR PACKAGE"):
+        package_info = (1, '600.0', '2022-12-24 07:37:37', '2023-01-08 07:37:41')
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
