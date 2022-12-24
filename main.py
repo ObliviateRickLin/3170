@@ -21,6 +21,9 @@ if "log_check" not in st.session_state:
     st.session_state["log_check"] = False
 if "role" not in st.session_state:
     st.session_state["role"] = "staff"
+if "ID" not in st.session_state: 
+    st.session_state["ID"] = 0
+    
 #three functions
 if st.session_state["function"] == "log":
     c1, c2 = st.columns((1,3))
