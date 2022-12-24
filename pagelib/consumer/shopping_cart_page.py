@@ -50,23 +50,22 @@ def shopping_cart_page():
                 st.dataframe(chip_type.style.applymap(color_zero))
             package_info = (st.session_state["ID"], total, today, ddl)
     if st.button("SUBMIT YOUR PACKAGE"):
-        try:
-            cnx = mysql.connector.connect(
-                    host="123.60.157.95",
-                    port=3306,
-                    user="root",
-                    password="csc123456@",
-                    database="project") 
-            cur = cnx.cursor()
-            query1 = """
-            INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
-            VALUES (%s, %s, %s, %s)
-            """
-            cur.execute(query1, package_info)
-            cnx.close()
-            st.experimental_rerun()
-        except:
-            st.warning("Check your package first before subbmitting.")
+
+        cnx = mysql.connector.connect(
+                host="123.60.157.95",
+                port=3306,
+                user="root",
+                password="csc123456@",
+                database="project") 
+        cur = cnx.cursor()
+        query1 = """
+        INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
+        VALUES (%s, %s, %s, %s)
+        """
+        cur.execute(query1, package_info)
+        cnx.close()
+        st.experimental_rerun()
+
 
     #st.write(product_quantities)
     return 
