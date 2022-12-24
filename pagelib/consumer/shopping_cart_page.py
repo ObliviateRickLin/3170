@@ -20,6 +20,8 @@ def shopping_cart_page():
     if "chip" not in st.session_state:
         with st.spinner('Wait for it. We are checking avaliable plants'):
             st.session_state["chip"] = select_plants_with_chip()
+    if "chip_in_package" not in st.session_state:
+        st.session_state["chip_in_package"] = 0
     if "package" not in st.session_state:
         st.session_state["package"] = 0
     chip_type = get_chip_type()
@@ -53,7 +55,6 @@ def shopping_cart_page():
             st.session_state["package"] = (st.session_state["ID"], str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
     
     if st.button("SUBMIT YOUR PACKAGE"):
-        #package_info = (1, '600.0', '2022-12-24 07:37:37', '2023-01-08 07:37:41')
         try:
             package_info = st.session_state["package"]
             cnx = mysql.connector.connect(
@@ -65,6 +66,34 @@ def shopping_cart_page():
             cur = cnx.cursor()
             query1 = """INSERT INTO package (USER_ID,  BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s)"""
             cur.execute(query1, package_info)
+            cnx.commit()
+            cnx.close()
+            cnx = mysql.connector.connect(
+                    host="123.60.157.95",
+                    port=3306,
+                    user="root",
+                    password="csc123456@",
+                    database="project") 
+            cur = cnx.cursor()
+            query2 = """SELECT PACKAGE_ID FROM package where USER_ID = %s , BUDGET = %s, CREATE_TIME = %s, DEADLINE = %s"""
+            cur.execute(query2, package_info)
+            package_id = cur.fetchone()
+            cnx.close()
+            cnx = mysql.connector.connect(
+                    host="123.60.157.95",
+                    port=3306,
+                    user="root",
+                    password="csc123456@",
+                    database="project") 
+            cur = cnx.cursor()
+            query3 = """INSERT INTO chip (CHIP_NAME, CHIP_VERSION, PRICE, PACKAGE_ID, PLANT_ID) VALUES (%s, %s,%s, %s, %s)"""
+            chip_in_package = []
+            for index, row in chip_type.iterrows():
+                num = row["NUMBER"]
+                for _ in range(num):
+                    chip_in_package.append((row["CHIP_NAME"],row["CHIP_VERSION"],row["PRICE"],package_id, 3))
+            st.write(chip_in_package)
+            cur.executemany(query3, chip_in_package)
             cnx.commit()
             cnx.close()
             st.success("Subbmit successfully")
