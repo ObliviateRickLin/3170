@@ -59,7 +59,7 @@ elif st.session_state["function"] == "consumer":
     elif selected_c == "Shopping Cart":
         shopping_cart_page()
     elif selected_c == "Current Order":
-        custormer_order_page(user_id=1)
+        custormer_order_page(user_id=40)
     st.button("Log out", on_click=move_to_log_state)
 
 elif st.session_state["function"] == "staff":
