@@ -75,6 +75,19 @@ def shopping_cart_page():
         cur2.execute("SELECT LAST_INSERT_ID()")
         package_id, = cur2.fetchone()
         cnx.close()
+        package_info = st.session_state["package"]
+        plant_info = st.session_state["plant_info"]
+        cnx = mysql.connector.connect(
+                host="123.60.157.95",
+                port=3306,
+                user="root",
+                password="csc123456@",
+                database="project") 
+        cur = cnx.cursor()
+        query = """INSERT INTO state (PACKAGE_ID, START_TIME, END_TIME, STATE_NAME) VALUES (%s, %s, %s, %s)"""
+        cur.execute(query, (package_id, package_info[2], package_info[3], "Waiting"))
+        cnx.commit()
+        cnx.close()
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
