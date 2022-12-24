@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from utils.icons import *
 from utils.sqlcnx import *
 from utils.dfstyle import *
-
+from utils.sltplt import *
 
 def shopping_cart_page():
     # Calculate the minimum and maximum date range
@@ -13,17 +13,22 @@ def shopping_cart_page():
     max_date = today + timedelta(days=20)
     dft_date = today + timedelta(days=15)
     # product_name
-    chip_type = get_chip_type()
+
     # title
     st.title('Chip Shopping Cart')
     st.write("___________________________________")
+    if "chip" not in st.session_state:
+        with st.spinner('Wait for it. We are checking avaliable plants'):
+            st.session_state["chip"] = select_plants_with_chip()
+    chip_type = get_chip_type()
+    chip_type = chip_type.merge(st.session_state["chip"])
     for index, row in chip_type.iterrows():
         with st.container():
             c0, c1, c2, c3, c4 = st.columns((1,5,1.4,2,1.8))
             with c0: display_icon(cpu)
             with c1: st.subheader(row["CHIP_NAME"]);st.caption("Version: %s"%row["CHIP_VERSION"])
             with c2: st.subheader("%s$"%row["PRICE"])
-            with c3: st.selectbox("Selectable Plants", options=("Plant A", "Plant B","Platn C"), key = ("plant",row["CHIP_NAME"],row["CHIP_VERSION"]))
+            with c3: chip_type.loc[index,"Selected_plants"] = st.selectbox("Selected_plants", options=(row["Selected_plants"]), key = ("plant",row["CHIP_NAME"],row["CHIP_VERSION"]))
             chip_type.loc[index,"NUMBER"] = c4.number_input(label = "Number", value=0, step=1, min_value=0, key = ("version",row["CHIP_NAME"],row["CHIP_VERSION"]))
             chip_type["COST"] = chip_type["NUMBER"] * chip_type["PRICE"]
             st.write("___________________________________")
