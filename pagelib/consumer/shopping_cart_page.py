@@ -49,6 +49,10 @@ def shopping_cart_page():
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
             package_info = (st.session_state["ID"], total, today, ddl)
+            st.write(type(st.session_state["ID"]))
+            st.write(type(total))
+            st.write(type(today))
+            st.write(type(ddl))
     if st.button("SUBMIT YOUR PACKAGE"):
 
         cnx = mysql.connector.connect(
