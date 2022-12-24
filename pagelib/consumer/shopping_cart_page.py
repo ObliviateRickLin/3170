@@ -22,6 +22,7 @@ def shopping_cart_page():
             st.session_state["chip"] = select_plants_with_chip()
     chip_type = get_chip_type()
     chip_type = chip_type.merge(st.session_state["chip"], on=["CHIP_NAME","CHIP_VERSION"])
+    package_info = 0
     with st.form("shopping cart"):
         for index, row in chip_type.iterrows():
             with st.container():
@@ -47,7 +48,8 @@ def shopping_cart_page():
                         help="DDL should be about 10 to 20 days after today.")
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
-    if st.button("SUBMIT"):
+            package_info = (st.session_state["ID"], total, today, ddl)
+    if st.button("SUBMIT YOUR PACKAGE"):
         try:
             cnx = mysql.connector.connect(
                     host="123.60.157.95",
@@ -60,7 +62,7 @@ def shopping_cart_page():
             INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
             VALUES (%s, %s, %s, %s)
             """
-            cur.execute(query1, (st.session_state["ID"], total, today, ddl))
+            cur.execute(query1, package_info)
             cnx.close()
             st.experimental_rerun()
         except:
