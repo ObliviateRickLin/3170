@@ -8,7 +8,7 @@ from utils.sltplt import select_plants_with_chip
 
 def shopping_cart_page():
     # Calculate the minimum and maximum date range
-    today = datetime.today()
+    today = datetime.now()
     min_date = today + timedelta(days=10)
     max_date = today + timedelta(days=20)
     dft_date = today + timedelta(days=15)
@@ -60,7 +60,7 @@ def shopping_cart_page():
         cur = cnx.cursor()
         query1 = """
         INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
-        VALUES (%s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s);
         """
         cur.execute(query1, package_info)
         cnx.close()
