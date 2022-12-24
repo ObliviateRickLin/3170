@@ -49,13 +49,12 @@ def shopping_cart_page():
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
             ddl = datetime.combine(ddl, datetime.now().time())
-            package_info = (st.session_state["ID"], total, today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
+            package_info = (str(st.session_state["ID"]), str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
             st.write(type(st.session_state["ID"]))
             st.write(type(total))
             st.write(type(today.strftime("%Y-%m-%d %H:%M:%S")))
             st.write(type(ddl.strftime("%Y-%m-%d %H:%M:%S")))
     if st.button("SUBMIT YOUR PACKAGE"):
-
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
@@ -64,8 +63,7 @@ def shopping_cart_page():
                 database="project") 
         cur = cnx.cursor()
         query1 = """
-        INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE)
-        VALUES (%s, %s, %s, %s);
+        INSERT INTO package (USER_ID, BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s);
         """
         cur.execute(query1, package_info)
         cnx.close()
