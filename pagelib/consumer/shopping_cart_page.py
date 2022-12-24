@@ -54,19 +54,23 @@ def shopping_cart_page():
     
     if st.button("SUBMIT YOUR PACKAGE"):
         #package_info = (1, '600.0', '2022-12-24 07:37:37', '2023-01-08 07:37:41')
-        package_info = st.session_state["package"]
-        cnx = mysql.connector.connect(
-                host="123.60.157.95",
-                port=3306,
-                user="root",
-                password="csc123456@",
-                database="project") 
-        cur = cnx.cursor()
-        query1 = """INSERT INTO package (USER_ID,  BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s)"""
-        cur.execute(query1, package_info)
-        cnx.commit()
-        cnx.close()
-        st.experimental_rerun()
+        try:
+            package_info = st.session_state["package"]
+            cnx = mysql.connector.connect(
+                    host="123.60.157.95",
+                    port=3306,
+                    user="root",
+                    password="csc123456@",
+                    database="project") 
+            cur = cnx.cursor()
+            query1 = """INSERT INTO package (USER_ID,  BUDGET, CREATE_TIME, DEADLINE) VALUES (%s, %s, %s, %s)"""
+            cur.execute(query1, package_info)
+            cnx.commit()
+            cnx.close()
+            st.success("Subbmit successfully")
+            st.experimental_rerun()
+        except:
+            st.warning("Please check your package information first before submitting!")
 
 
     #st.write(product_quantities)
