@@ -57,8 +57,8 @@ def plant_performance():
         if province != "":
             cur2.execute("""
                         select u.province, c.chip_name as ChipName,sum(p.budget) as revenue
-                        from user AS u natural join package AS p, chip AS c
                         where p.package_id=c.package_id and province in (%s)
+                        from user AS u natural join package AS p, chip AS c
                         group by c.chip_name
                         order by sum(p.budget) desc; 
                         """%(province))
@@ -79,8 +79,8 @@ def plant_performance():
         cur3 = cnx3.cursor()
         cur3.execute("""
                     select sum(p.budget) as revenue, DATE_FORMAT(p.create_time,'%Y-%m-%d') as create_time
-                    from user as u, package as p
                     where u.province in ('Guangdong','Hubei')
+                    from user as u, package as p
                     GROUP BY MONTH(p.create_time)
                     ORDER BY p.create_time asc
                     """)
@@ -102,9 +102,9 @@ def plant_performance():
             
         cur4 = cnx4.cursor()
         cur4.execute('''select Date, count(*) as finish_num
-                        from (select DATE(p.CREATE_TIME) as date, s.state_name as status
-                        from package as p natural join state as s) as joint
                         where Status='Finished'
+                        from (select DATE(p.CREATE_TIME) as date, s.state_name as status
+                        from package as p natural join state as s) as joint                       
                         GROUP BY MONTH(Date)
                         ORDER BY Date asc''')
         column=[col[0] for col in cur4.description]
