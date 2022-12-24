@@ -7,7 +7,6 @@ from utils.dfstyle import *
 from utils.sltplt import select_plants_with_chip
 
 def shopping_cart_page():
-    global package_info
     # Calculate the minimum and maximum date range
     today = datetime.now()
     min_date = today + timedelta(days=10)
@@ -21,9 +20,10 @@ def shopping_cart_page():
     if "chip" not in st.session_state:
         with st.spinner('Wait for it. We are checking avaliable plants'):
             st.session_state["chip"] = select_plants_with_chip()
+    if "package" not in st.session_state:
+        st.session_state["package"] = 0
     chip_type = get_chip_type()
     chip_type = chip_type.merge(st.session_state["chip"], on=["CHIP_NAME","CHIP_VERSION"])
-    package_info = 0
     with st.form("shopping cart"):
         for index, row in chip_type.iterrows():
             with st.container():
@@ -50,11 +50,11 @@ def shopping_cart_page():
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
             ddl = datetime.combine(ddl, datetime.now().time())
-            package_info = (st.session_state["ID"], str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
+            st.session_state["package"] = (st.session_state["ID"], str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
     
     if st.button("SUBMIT YOUR PACKAGE"):
         #package_info = (1, '600.0', '2022-12-24 07:37:37', '2023-01-08 07:37:41')
-        st.write(package_info)
+        package_info = st.session_state["package"]
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
