@@ -30,7 +30,8 @@ def selectable_plants(plants, arg1, arg2):
     Selectable_plant_list (List): which plants can be selected to produce this chip
     """
     plant = []
-
+    #enough or not, we only choose 3
+    enough = True
     # Assume `arg1` is the chip name, `arg2` is the chip version
     # Find all operation type needed
     operation_name_ = run_query("SELECT operation_name FROM chip_type_with_operation_type WHERE CHIP_NAME = %s AND CHIP_VERSION = %s;",(arg1, arg2))
@@ -49,6 +50,7 @@ def selectable_plants(plants, arg1, arg2):
         machine_name, machine_version = [i[0] for i in machine_info], [i[1] for i in machine_info]
         # Record whether an operation name is included
         op_name_dict = dict()
+        if enough: break
         # Find all operation types that could be processed
         for i in range(len(machine_name)):
             op_name_can_process_ = run_query("SELECT operation_name FROM machine_type_with_operation_type WHERE machine_name = %s AND machine_version = %s;", machine_info[i])
@@ -75,8 +77,8 @@ def select_plants_with_chip():
     plants = [plant_[0] for plant_ in plants_]
     chip_type = pd.DataFrame(run_query("SELECT CHIP_NAME, CHIP_VERSION FROM chip_type"))
     chip_type.columns =["chip_name", "chip_version"]
-    chip_type["Selected plants"] = 0
-    chip_type["Selected plants"] = chip_type.apply(lambda row: selectable_plants(plants, row["chip_name"], row['chip_version']), axis=1)
+    chip_type["Selected_plants"] = 0
+    chip_type["Selected_plants"] = chip_type.apply(lambda row: selectable_plants(plants, row["chip_name"], row['chip_version']), axis=1)
     return chip_type
 
 if __name__ == "__main__":
