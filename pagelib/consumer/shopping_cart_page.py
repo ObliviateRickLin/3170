@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from utils.icons import *
 from utils.sqlcnx import *
 from utils.dfstyle import *
-from utils.sltplt import *
+from utils.sltplt import select_plants_with_chip
 
 def shopping_cart_page():
     # Calculate the minimum and maximum date range
