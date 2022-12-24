@@ -48,7 +48,7 @@ def shopping_cart_page():
                         help="DDL should be about 10 to 20 days after today.")
             with st.expander("Check your shopping cart information"):
                 st.dataframe(chip_type.style.applymap(color_zero))
-            ddl = datetime.combine(ddl, datetime.now().strftime("%H:%M:%S"))
+            ddl = datetime.combine(ddl, datetime.now().time())
             package_info = (st.session_state["ID"], total, today, ddl)
             st.write(type(st.session_state["ID"]))
             st.write(type(total))
