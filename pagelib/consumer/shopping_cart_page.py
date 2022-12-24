@@ -50,6 +50,7 @@ def shopping_cart_page():
                 st.dataframe(chip_type.style.applymap(color_zero))
             ddl = datetime.combine(ddl, datetime.now().time())
             package_info = (st.session_state["ID"], str(total), today.strftime("%Y-%m-%d %H:%M:%S"), ddl.strftime("%Y-%m-%d %H:%M:%S"))
+    st.write(package_info)
     if st.button("SUBMIT YOUR PACKAGE"):
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
