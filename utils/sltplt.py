@@ -50,7 +50,7 @@ def selectable_plants(plants, arg1, arg2):
         machine_name, machine_version = [i[0] for i in machine_info], [i[1] for i in machine_info]
         # Record whether an operation name is included
         op_name_dict = dict()
-        if enough: break
+        if enough: return plant
         # Find all operation types that could be processed
         for i in range(len(machine_name)):
             op_name_can_process_ = run_query("SELECT operation_name FROM machine_type_with_operation_type WHERE machine_name = %s AND machine_version = %s;", machine_info[i])
