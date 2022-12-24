@@ -6,7 +6,7 @@ import numpy as np
 
 from utils.sqlcnx import *
 # user id for testing
-USER_ID = 100
+USER_ID = st.session_state["ID"]
 
 CIPY_PATH = "data/plant_pos.csv"
 
@@ -31,7 +31,7 @@ def cancel_order(query):
     cnx.commit()
     cnx.close()
 
-def custormer_order_page(user_id):
+def custormer_order_page(user_id=USER_ID):
     
     ## CSS
     m = st.markdown("""
