@@ -57,8 +57,8 @@ def plant_performance():
         if province != "":
             cur2.execute("""
                         select u.province, c.chip_name as ChipName,sum(p.budget) as revenue
-                        where p.package_id=c.package_id and province in (%s)
                         from user AS u natural join package AS p, chip AS c
+                        where p.package_id=c.package_id and province in (%s)
                         group by c.chip_name
                         order by sum(p.budget) desc; 
                         """%(province))
