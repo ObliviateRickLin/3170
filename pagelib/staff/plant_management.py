@@ -5,7 +5,7 @@ import mysql.connector
 
 
 def plant_management_sys():
-    user_id = mysql.connector.session_state["ID"] 
+    user_id = st.session_state["ID"] 
     cnx1 = mysql.connector.connect(
         host="123.60.157.95",
         port=3306,
