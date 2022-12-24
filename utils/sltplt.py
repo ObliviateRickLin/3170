@@ -16,7 +16,7 @@ def run_query(query, *args):
     cnx.close()
     return result
 
-def selectable_plants(plants, arg1, arg2):
+def selectable_plants(plants, arg1, arg2, enough=True):
     """
     This is a function returns the selectable plants for a specific type of chip.
 
@@ -29,11 +29,11 @@ def selectable_plants(plants, arg1, arg2):
     Returns:
     Selectable_plant_list (List): which plants can be selected to produce this chip
     """
-    plant = []
+    plant = np.random.choice(plants, size=3)
     #enough or not, we only choose 3
-    enough = True
     # Assume `arg1` is the chip name, `arg2` is the chip version
     # Find all operation type needed
+    if enough: return plant
     operation_name_ = run_query("SELECT operation_name FROM chip_type_with_operation_type WHERE CHIP_NAME = %s AND CHIP_VERSION = %s;",(arg1, arg2))
     operation_name = [i[0] for i in operation_name_]
 
@@ -43,7 +43,7 @@ def selectable_plants(plants, arg1, arg2):
     # Select all plant
     all_plant_id_ = run_query("SELECT plant_id FROM plant;")
     all_plant_id = [i[0] for i in all_plant_id_]
-    plant = np.random.choice(plants, size=3)
+    
     for id in all_plant_id:
         # Select all machines of the plant
         machine_info = run_query("SELECT machine_name, machine_version FROM machine WHERE plant_id = %s;", [id])
