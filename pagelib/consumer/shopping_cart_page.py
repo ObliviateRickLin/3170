@@ -6,6 +6,10 @@ from utils.sqlcnx import *
 from utils.dfstyle import *
 from utils.sltplt import select_plants_with_chip
 
+def add_plant_info():
+    result = run_query("SELECT PLANT_NAME, PLANT_ID FROM plant;")
+    return dict(result)
+
 def shopping_cart_page():
     # Calculate the minimum and maximum date range
     today = datetime.now()
@@ -20,8 +24,8 @@ def shopping_cart_page():
     if "chip" not in st.session_state:
         with st.spinner('Wait for it. We are checking avaliable plants'):
             st.session_state["chip"] = select_plants_with_chip()
-    if "chip_in_package" not in st.session_state:
-        st.session_state["chip_in_package"] = 0
+    if "plant_info" not in st.session_state:
+        st.session_state["plant_info"] = add_plant_info()
     if "package" not in st.session_state:
         st.session_state["package"] = 0
     chip_type = get_chip_type()
@@ -56,6 +60,7 @@ def shopping_cart_page():
     
     if st.button("SUBMIT YOUR PACKAGE"):
         package_info = st.session_state["package"]
+        plant_info = st.session_state["plant_info"]
         cnx = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
@@ -82,7 +87,7 @@ def shopping_cart_page():
         for index, row in chip_type.iterrows():
             num = row["NUMBER"]
             for _ in range(num):
-                chip_in_package.append((row["CHIP_NAME"],row["CHIP_VERSION"],row["PRICE"],package_id, 3))
+                chip_in_package.append((row["CHIP_NAME"],row["CHIP_VERSION"],row["PRICE"],package_id, plant_info[row["PLANT"]]))
         st.write(chip_in_package)
         cur.executemany(query3, chip_in_package)
         cnx.commit()
