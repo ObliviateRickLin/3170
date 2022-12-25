@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 def move_to_consumer_state():
     st.session_state["function"] = "consumer"
