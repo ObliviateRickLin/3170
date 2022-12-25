@@ -106,7 +106,6 @@ def shopping_cart_page():
             cnx.commit()
             cnx.close()
             st.success("Subbmit successfully")
-            st.experimental_rerun()
         except:
             st.warning("Please check your package first before submitting!")
 
