@@ -39,8 +39,8 @@ def plant_management_sys():
         cur2 = cnx2.cursor()
         cur2.execute("""
                     select c.chip_name, c.package_id
-                    where c.plant_id = %s and s.state_name = 'Wait'
-                    from chip as c natural join state as s  
+                    from chip as c natural join state as s
+                    where c.plant_id = %s and s.state_name = 'Wait'  
                     """%plantID)
         waiting_chip = cur2.fetchall()
         Select_Box = []
@@ -88,8 +88,8 @@ def plant_management_sys():
         cur4 = cnx4.cursor()
         cur4.execute("""
                     SELECT c.chip_name, s.state_name
-                    WHERE c.plant_id = %s and s.state_name = 'Processing'
                     FROM chip AS c NATURAL JOIN state AS s
+                    WHERE c.plant_id = %s and s.state_name = 'Processing'
                     """,(plantID,))
         df2 = pd.DataFrame(
             cur4.fetchall(),
