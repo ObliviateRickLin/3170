@@ -70,13 +70,13 @@ def plant_performance():
         else:
             st.text("Please select at least one province!")
     with tab2: 
-        if province != "":
-            cnx3 = mysql.connector.connect(
+        cnx3 = mysql.connector.connect(
                 host="123.60.157.95",
                 port=3306,
                 user="root",
                 password="csc123456@",
                 database="project")
+        if province != "":
             cur3 = cnx3.cursor()
             cur3.execute("""
                         select sum(p.budget) as revenue, DATE_FORMAT(p.create_time,'%%Y-%%m-%%d') as create_time
