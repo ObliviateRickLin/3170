@@ -11,12 +11,12 @@ def plant_performance():
     Under this function, staff can select multiple provinces by themselves. The names of the six chips with the highest REVENUE under the selected provinces will be displayed in the form of a table\n
     2. Monthly REVENUE overview:\n
     Under this function, you can see the monthly revenue change of the company on the line chart\n
-    3. Order completion:\n
-    Under this function, you can see the change in the number of orders received and completed by the company each month on the AREA chart\n
+    3. Packages completion:\n
+    Under this function, you can see the change in the number of packages received and completed by the company each month on the AREA chart\n
     """)
 
 
-    tab1, tab2, tab3= st.tabs(["Province sales ranking", "Monthly REVENUE Overview","Order completion"])
+    tab1, tab2, tab3= st.tabs(["Province sales ranking", "Monthly REVENUE Overview","Packages completion"])
     with tab1:
         cnx1 = mysql.connector.connect(
             host="123.60.157.95",
