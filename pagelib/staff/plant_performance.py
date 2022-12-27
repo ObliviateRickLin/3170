@@ -8,7 +8,7 @@ def plant_performance():
     st.header("""\n
     This page has three categories of features to show\n
     1. Province sales ranking:\n
-    Under this function, you can select multiple provinces by themselves. The names of the six chips with the highest REVENUE under the selected provinces will be displayed in the form of a table\n
+    Under this function, staff can select multiple provinces by themselves. The names of the six chips with the highest REVENUE under the selected provinces will be displayed in the form of a table\n
     2. Monthly REVENUE overview:\n
     Under this function, you can see the monthly revenue change of the company on the line chart\n
     3. Order completion:\n
