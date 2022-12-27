@@ -40,7 +40,7 @@ def plant_management_sys():
         cur2.execute("""
                     select c.chip_name, c.package_id
                     from chip as c natural join state as s
-                    where c.plant_id = %s and s.state_name = 'Wait'
+                    where c.plant_id = %s and s.state_name = 'Waiting'
                     """%plantID)
         waiting_chip = cur2.fetchall()
         Select_Box = []
@@ -56,8 +56,11 @@ def plant_management_sys():
             )
             if st.form_submit_button('Submit'):
                 chip = ""
-                for i in packageID:
-                    chip += str(i)
+                for i in selected:
+                    index = Select_Box.index(i)
+                    pid = packageID[index]
+                    del_list.append(pid)
+                    chip += str(pid)
                     chip += ','
                 chip = chip[:-1]
 
