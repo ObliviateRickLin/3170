@@ -102,9 +102,9 @@ def plant_performance():
             
         cur4 = cnx4.cursor()
         cur4.execute('''select Date, count(*) as finish_num
-                        where Status='Finished'
                         from (select DATE(p.CREATE_TIME) as date, s.state_name as status
-                        from package as p natural join state as s) as joint                       
+                        from package as p natural join state as s) as joint
+                        where Status='Finished'
                         GROUP BY MONTH(Date)
                         ORDER BY Date asc''')
         column=[col[0] for col in cur4.description]
