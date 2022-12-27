@@ -51,8 +51,10 @@ def plant_management_sys():
             )
             if st.form_submit_button('Submit'):
                 chip = ""
-                for i in packageID:
-                    chip += str(i)
+                for i in selected:
+                    index = Select_Box.index(i)
+                    pid = packageID[index]
+                    chip += str(pid)
                     chip += ','
                 chip = chip[:-1]
                 cnx3 = mysql.connector.connect(
