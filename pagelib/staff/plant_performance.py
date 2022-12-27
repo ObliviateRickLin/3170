@@ -79,8 +79,8 @@ def plant_performance():
         cur3 = cnx3.cursor()
         cur3.execute("""
                     select sum(p.budget) as revenue, DATE_FORMAT(p.create_time,'%Y-%m-%d') as create_time
-                    where u.province in ('Guangdong','Hubei')
                     from user as u, package as p
+                    where u.province in ('Guangdong','Hubei')
                     GROUP BY MONTH(p.create_time)
                     ORDER BY p.create_time asc
                     """)
