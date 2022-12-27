@@ -59,7 +59,6 @@ def plant_management_sys():
                 for i in selected:
                     index = Select_Box.index(i)
                     pid = packageID[index]
-                    del_list.append(pid)
                     chip += str(pid)
                     chip += ','
                 chip = chip[:-1]
