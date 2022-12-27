@@ -14,39 +14,40 @@ def plant_performance():
     3. Packages completion:\n
     Under this function, you can see the change in the number of packages received and completed by the company each month on the AREA chart\n
     """)
+    st.text('\n')
+    st.text('\n')
+    st.text('\n')
+    cnx1 = mysql.connector.connect(
+        host="123.60.157.95",
+        port=3306,
+        user="root",
+        password="csc123456@",
+        database="project")
+    cur1 = cnx1.cursor()
+    cur1.execute("""
+                select distinct province
+                from user; 
+                """)
+    All_p_Option = cur1.fetchall()
+    Select_Box = []
+    for i in All_p_Option:
+        Select_Box.append(i[0])
 
-
+    selected = st.multiselect(
+        'Select the province you want to check:',
+        Select_Box,
+        ['Guangdong'] 
+    )
+    province = ""
+    for i in selected:
+        province += "'"
+        province += i
+        province += "'"
+        province += ','
+    province = province[:-1]
     tab1, tab2, tab3= st.tabs(["Province Sales Ranking", "Monthly Revenue Overview","Packages Completion"])
     with tab1:
-        cnx1 = mysql.connector.connect(
-            host="123.60.157.95",
-            port=3306,
-            user="root",
-            password="csc123456@",
-            database="project")
-        cur1 = cnx1.cursor()
-        cur1.execute("""
-                    select distinct province
-                    from user; 
-                    """)
-        All_p_Option = cur1.fetchall()
-        Select_Box = []
-        for i in All_p_Option:
-            Select_Box.append(i[0])
-
-        selected = st.multiselect(
-            'Select the province you want to check:',
-            Select_Box,
-            ['Guangdong'] 
-        )
-        province = ""
-        for i in selected:
-            province += "'"
-            province += i
-            province += "'"
-            province += ','
-        province = province[:-1]
-
+        
         cnx2 = mysql.connector.connect(
             host="123.60.157.95",
             port=3306,
