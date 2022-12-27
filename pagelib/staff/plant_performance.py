@@ -16,7 +16,7 @@ def plant_performance():
     """)
 
 
-    tab1, tab2, tab3= st.tabs(["Province sales ranking", "Monthly REVENUE Overview","Packages completion"])
+    tab1, tab2, tab3= st.tabs(["Province Sales Ranking", "Monthly Revenue Overview","Packages Completion"])
     with tab1:
         cnx1 = mysql.connector.connect(
             host="123.60.157.95",
