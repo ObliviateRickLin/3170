@@ -78,12 +78,12 @@ def plant_performance():
             database="project")
         cur3 = cnx3.cursor()
         cur3.execute("""
-                    select sum(p.budget) as revenue, DATE_FORMAT(p.create_time,'%%Y-%%m-%%d') as create_time
+                    select sum(p.budget) as revenue, DATE_FORMAT(p.create_time,'%Y-%m-%d') as create_time
+                    where u.province in ('Guangdong','Hubei')
                     from user as u, package as p
-                    where u.province in (%s)
                     GROUP BY MONTH(p.create_time)
                     ORDER BY p.create_time asc
-                    """%province)
+                    """)
         column=[col[0] for col in cur3.description]
         data = cur3.fetchall()
         df2=pd.DataFrame(list(data),columns=column)
@@ -138,4 +138,3 @@ def plant_performance():
     cnx3.close()
     cnx4.close()
     cnx5.close()
-
