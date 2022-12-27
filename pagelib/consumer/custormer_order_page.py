@@ -31,6 +31,7 @@ def cancel_order(query):
 
 def custormer_order_page():
     user_id = st.session_state["ID"] 
+
     ## CSS
     m = st.markdown("""
     <style>
@@ -69,16 +70,17 @@ def custormer_order_page():
     # Cancel Orders
     st.markdown(
         """
-        ## ***Cancel Orders***
+        ## ***Cancel Orders in Waiting Stage***
         
         """
     )
+    cur_waiting_package = current_user_order[current_user_order['state_name'].isin(['Waiting'])]['package_id']
     
     package_selectbox, cancel_button = st.columns((5,1)) 
     
     selected_pacakge = package_selectbox.selectbox(
         'package id',
-        cur_package
+        cur_waiting_package
     )
     
     cancel = cancel_button.button('cancel')
