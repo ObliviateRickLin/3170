@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import mysql.connector
+
+
 def plant_management_sys():
     user_id = st.session_state["ID"] 
     cnx1 = mysql.connector.connect(
@@ -10,11 +12,12 @@ def plant_management_sys():
         user="root",
         password="csc123456@",
         database="project")
+
     cur1 = cnx1.cursor()
     cur1.execute("""
                 SELECT plant_id, plant_name 
                 FROM plant 
-                WHERE  boss_id = %s; 
+                WHERE  boss_id = %i; 
                 """%user_id)
     try:
         plantID, plantName = cur1.fetchone()
@@ -24,6 +27,7 @@ def plant_management_sys():
     st.title("Welcome to Plant %s" %plantName)
     st.header("Please manage and confirm the existing chip orders.")
     tab1, tab2 = st.tabs(["Manage Chip Order", "Remaining Orders"])
+
     with tab1:
         st.header("Select the chip and let it be proccessed.")
         cnx2 = mysql.connector.connect(
@@ -36,7 +40,7 @@ def plant_management_sys():
         cur2.execute("""
                     select c.chip_name, c.package_id
                     from chip as c natural join state as s
-                    where c.plant_id = %s and s.state_name = 'Waiting'
+                    where c.plant_id = %s and s.state_name = 'Wait'
                     """%plantID)
         waiting_chip = cur2.fetchall()
         Select_Box = []
@@ -44,6 +48,7 @@ def plant_management_sys():
         for i in waiting_chip:
             Select_Box.append(i[0])
             packageID.append(i[1])
+
         with st.form("my_form"):
             selected = st.multiselect(
                 'Select the chip you want to manage:',
@@ -51,12 +56,11 @@ def plant_management_sys():
             )
             if st.form_submit_button('Submit'):
                 chip = ""
-                for i in selected:
-                    index = Select_Box.index(i)
-                    pid = packageID[index]
-                    chip += str(pid)
+                for i in packageID:
+                    chip += str(i)
                     chip += ','
                 chip = chip[:-1]
+
                 cnx3 = mysql.connector.connect(
                     host="123.60.157.95",
                     port=3306,
