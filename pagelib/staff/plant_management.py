@@ -36,8 +36,7 @@ def plant_management_sys():
         cur2.execute("""
                     select c.chip_name, c.package_id
                     from chip as c natural join state as s
-                    where c.plant_id = %i and s.state_name = 'Wait'
-                    where c.plant_id = %s and s.state_name = 'Wait'
+                    where c.plant_id = %s and s.state_name = 'Waiting'
                     """%plantID)
         waiting_chip = cur2.fetchall()
         Select_Box = []
