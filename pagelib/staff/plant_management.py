@@ -14,7 +14,7 @@ def plant_management_sys():
     cur1.execute("""
                 SELECT plant_id, plant_name 
                 FROM plant 
-                WHERE  boss_id = %i; 
+                WHERE  boss_id = %s; 
                 """%user_id)
     try:
         plantID, plantName = cur1.fetchone()
